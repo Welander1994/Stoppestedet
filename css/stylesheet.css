@@ -58,29 +58,19 @@ nav ul {
 }
 
 .content {
-    grid-area: content;
-    
+    grid-area: content;  
 
 }
 
 .main-nav {
-    grid-area: nav;
-    display: block;
-
-}
-
-.main-nav-active {
-    grid-area: nav;
     display: none;
 
 }
 
+.main-nav-active {
+    display: block;
 
-
-
-
-
-
+}
 
 .ad {
     grid-area: ad;
@@ -98,7 +88,6 @@ nav ul {
     grid-template-columns: 1fr 3fr;
     grid-template-areas: 
     "header      header"
-    "nav          nav"
     "ad          ad"
     "content     content"
     "footer      footer";
@@ -117,6 +106,12 @@ nav ul {
 
     nav ul {
         flex-direction: column;
+    }
+
+    .main-nav {
+        grid-area: nav;
+        display: block;
+    
     }
 
     .main-header {
