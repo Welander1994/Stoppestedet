@@ -3,30 +3,57 @@
     <meta charset="UFT-8">
     <link rel="stylesheet" href="/css/stylesheet.css">
     <script src="/js/javascript.js" defer></script>
+    <script src="https://kit.fontawesome.com/9d426a8111.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>javascript test</title>
 </head>
 <body>
 
-    <!--ved at ændre parameter i funktion kan man vælge hvilken punkt i arrayet
-    man vil havde information fra-->
-    <button onclick="changeFrontPage(0)">hej</button>
-    <button onclick="changeFrontPage(1)">hej igen</button>
-    <button onclick="changeFrontPage(2)">hej for 3. gang</button>
-    <button onclick="changeFrontPage(3)">okay nu er det nok</button>
 
-
-
-    <h1 id="info-headline">1. Overskrift</h1>
-    <img id="info-img" src="/img/img-1.jpg" alt="test" width="25%">
-  
-    <video id="video" width="400" controls>
-        <source src="/img/video-1.mp4" type="video/mp4">
-        Your browser does not support HTML video.
-      </video>
-
-    <p id="info-text">text til 1. emne</p>
     
+    <div class="wrapper">
+        <header class="main-header">The header 
+            <div onclick="burgerMenu()"><i class="fas fa-bars"></i></div></header>
+        <nav class="main-nav" id="test">
+            <ul>
+                <li><button onclick="changeFrontPage(0)">Stoppestedet</button></li>
+                <li><button onclick="changeFrontPage(1)">Om os</button></li>
+                <li><button onclick="changeFrontPage(2)">Ungegruppe</button></li>
+                <li><button onclick="changeFrontPage(3)">Telefonrådgivning</button></li>
+                <li><button onclick="changeFrontPage(4)">Peer to Peer</button></li>
+                <li><button onclick="changeFrontPage(5)">Samværsvenner</button></li>
+                <li><button onclick="changeFrontPage(6)">Skibhus Kabyssen</button></li>
+                <li><button onclick="changeFrontPage(7)">Bisidder</button></li>
+                <li><button onclick="changeFrontPage(8)">Pårørende gruppe</button></li>
+                <li><button onclick="changeFrontPage(9)">Frivillig</button></li>
+                <li><button onclick="changeFrontPage(10)">Åbningstider</button></li>
+                <li><button onclick="changeFrontPage(11)">Kontakt</button></li>
+                <li><button onclick="changeFrontPage(12)">Log ind</button></li>
+ 
+            </ul>
+        </nav>
+        <article class="content">
+            <h1 id="info-headline">Vi er her for at hjælpe dig</h1>
+            <p id="info-text">Stoppestedet er et SIND værested, der har eksisteret siden først i 90’erne. <b>Hos os er alle velkomne.</b> Stoppestedet er et anonymt værested, hvilket betyder, at tilbuddene kan benyttes frivilligt og uden visitering.
+
+                Tak fordi du er her. Hvis du vil vide mere om hvem vi er, og hvordan vi kan hjælpe dig, og hvordan du muligvis kan hjælpe os, er du velkommen til at læse mere om vores forskellige muligheder for lige netop dig.</p>
+        </article>
+  
+        <div class="ad">   
+            <img id="info-img" src="/img/img-1.jpg" alt="test" width="70%">
+            <video id="video" width="648" controls>
+                <source src="/img/video-1.mp4" type="video/mp4">
+                Your browser does not support HTML video.
+              </video>
+              <video id="video2" width="648" controls>
+                <source src="/img/video-1.mp4" type="video/mp4">
+                Your browser does not support HTML video.
+              </video>
+        </div>
+        <footer class="main-footer">The footer</footer>
+    </div>
+
+  
 
   
 </body>
