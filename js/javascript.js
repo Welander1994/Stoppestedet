@@ -19,7 +19,7 @@ let forsideIndhold = [
   ["Samværsvenner",   "/img/img-2.jpg",   "text til 3. emne",],
   ["Skibhus Kabyssen",   " ",                "text til 4. emne",],
   ["Bisidder",   "/img/img-2.jpg",   "text til 2. emne",],
-  ["Pårørende gruppe",   "/img/img-2.jpg",   "text til 3. emne",],
+  ["Pårørende grupper",   "/img/img-2.jpg",   "Har du en psykisk sårbar eller sindslidende tæt inde på livet? Et familiemedlem eller en ven? Og har du lyst til at mødes med andre i samme situation? <br><br>Vi etablerer løbende grupper for pårørende, hvor man mødes anonymt over ca. ti gange og deler udfordringer og erfaringer.<br><br><b>Du kan kontakte vores koordinator, hvis du vil vide mere.</b><br><br><b>Koordinator Torben Haagerup:</b><br>Telefon: <b>22 96 28 82</b><br>E-mail: <b>info@stoppestedet.dk</b>",],
   ["Frivillig",  " ",                "text til 4. emne",],
   ["Åbningstider",  "/img/img-2.jpg",   "text til 2. emne",],
   ["Kontakt",  " ",                "text til 4. emne",],
