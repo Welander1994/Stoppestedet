@@ -1,3 +1,18 @@
+:root {
+
+    /* colors */
+    --red-1: #a92c24;
+    --red-2: #bd5344;
+    --red-3: #cf7566;
+    --red-4: #de978a;
+    --red-5: #ecb9b0;
+    --red-6: #f7dcd7;
+    --white: #ffffff;
+
+    /* fonts */
+    --h1: 'Overpass';
+  }
+
 body {
     margin: 0;
     padding: 0;
@@ -40,7 +55,7 @@ b {
 /* rammer child lige under */
 .wrapper > * {
     border: 2px solid #f08c00;
-    background-color: #ffec99;
+    background-color: var(--white);
     border-radius: 5px;
     padding: 20px;
 }
@@ -62,9 +77,41 @@ nav ul {
 
 }
 
+.content h1 {
+    font-family: var(--h1);
+    font-weight: 2000;
+    font-size: 3rem;
+}
+
+.content p {
+    font-family: 'Overpass'; 
+}
+
 .main-nav {
     display: none;
 
+}
+
+button {
+    background-color: var(--red-1);
+    border: none;
+    color: var(--white);
+    padding: 15px 32px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "overpass";
+    font-size: 16px;
+    cursor: pointer;
+    min-width: 200px;
+}
+
+button:hover {
+    background-color: var(--red-2);
+}
+
+.main-nav ul {
+    padding-left: 25%;
 }
 
 .main-nav-active {
