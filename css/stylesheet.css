@@ -31,11 +31,11 @@ body {
 
 #video {
     display: none;
-    padding: 1%
+ 
 }
 #video2 {
     display: none;
-    padding: 1%;
+    
 }
 
 #info-img {
@@ -92,6 +92,14 @@ nav ul {
 
 }
 
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
 button {
     background-color: var(--red-1);
     border: none;
@@ -104,15 +112,19 @@ button {
     font-size: 16px;
     cursor: pointer;
     min-width: 200px;
+    outline: none;
 }
+
+button:pressed {
+    background-color: var(--red-2);
+    border: none;
+    }
 
 button:hover {
     background-color: var(--red-2);
 }
 
-.main-nav ul {
-    padding-left: 25%;
-}
+
 
 .main-nav-active {
     display: block;
@@ -145,7 +157,7 @@ button:hover {
         background-color: deeppink;
         grid-template-columns: 1fr 2fr 2fr;
         grid-template-areas: 
-        "nav  header     header"
+        "nav     content    ad"
         "nav     content    ad"
         "nav     content    ad"
         "footer  footer     footer";
@@ -158,11 +170,12 @@ button:hover {
     .main-nav {
         grid-area: nav;
         display: block;
+        height: 96vh;
     
     }
 
     .main-header {
-        grid-area: header;
+        display: none;
         height: 100px;
     }
 }
