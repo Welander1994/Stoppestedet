@@ -15,11 +15,11 @@
     <h1>Login på frivillig-/personaleportalen</h1>
 
     <div class="form-container">
-        <form>
+        <form name="form">
             <label for="brugernavn">Brugernavn</label>
             <input class="input" type="text" id="brugernavn" name="brugernavn" required>
             <label for="kode">Adgangskode</label>
-            <input class="input" type="password" id="kode" name="kode" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Skal indeholde mindst ét tal og være minimum 8 karakterer langt!" required>
+            <input class="input" type="password" id="kode" name="kode" pattern="(?=.*\d).{8,}" title="Skal indeholde mindst ét tal og være minimum 8 karakterer langt!" required>
             <input class="button" type="submit" value="Log ind">
         </form>
     </div>
@@ -33,7 +33,6 @@
         <p id="tal" class="invalid">Minimum ét tal</p>
         <p id="karakterer" class="invalid">Minimum otte karakterer</p>
       </div>
-
 
 </body>
 </html>
