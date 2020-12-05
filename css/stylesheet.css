@@ -217,7 +217,7 @@ button:hover {
         position: relative;
         background-color: var(--white);
         width: 10vw;
-        height: 180vw;
+        height: 50vw;
         left: 0;
         transition: 0s;
         
