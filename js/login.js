@@ -1,3 +1,5 @@
+console.log("JS fungerer perfekt jo!");
+
 let myInput = document.getElementById("kode");
 let tal = document.getElementById("tal");
 let karakterer = document.getElementById("karakterer");
@@ -8,16 +10,19 @@ let myUsername = document.getElementById("brugernavn");
 let bogstaver = /[a-z]/g;
 let bogbog = document.getElementById("bogstaver");
 
+/* Gør at besked-boksen bliver vist, når brugeren trykker på kode-feltet eller brugernavnsfeltet*/
 myInput.onfocus = function() {
     document.getElementById("besked").style.display = "block";
 }
-/* Gør at besked-boksen bliver vist, når brugeren trykker på kode-feltet eller brugernavnsfeltet*/
 myInput.onblur = function() {
   document.getElementById("besked").style.display = "none";
 }
 
-myUsername.onclick = function() {
+myUsername.onfocus = function() {
   document.getElementById("beskedbesked").style.display = "block";
+}
+myUsername.onblur = function() {
+  document.getElementById("beskedbesked").style.display = "none";
 }
 
 myUsername.onkeyup = function() {
@@ -53,7 +58,7 @@ myInput.onkeyup = function() {
 /* Hvis input er korrekt i kodefeltet - og der også er indtastet brugernavn, kommer der en "log in godkendt"-alert - hvis ikke, kommer der en anden */
 mySubmit.onclick = function() {
   if(myInput.value.match(taltal) && myInput.value.length >= 8 && myUsername.value.match(bogstaver)) {
-    alert("Log in godkendt");
+    alert("Log ind godkendt");
   }
   else {
     alert("Forkert adgangskode eller brugernavn")

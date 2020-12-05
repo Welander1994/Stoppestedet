@@ -71,6 +71,7 @@ label {
     color: var(--red-1);
     text-decoration: underline;
     margin: 20px;
+    cursor: pointer;
 }
 
 .popbesked {
