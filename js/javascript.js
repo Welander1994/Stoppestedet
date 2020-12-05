@@ -18,6 +18,7 @@ function changeFrontPage(i) {
   document.getElementById("info-headline").innerHTML = forsideIndhold[i][0];
   document.getElementById("info-img").src = forsideIndhold[i][1];
   document.getElementById("info-text").innerHTML = forsideIndhold[i][2];
+  console.log(forsideIndhold[1][1])
 
   /*hvis man skal display en video istedet for et bilede så går man ind og 
   skriver nummeret fra changeFontPage(i), så den ved hvor den skal vise video i stedet for billede*/
