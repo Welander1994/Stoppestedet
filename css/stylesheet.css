@@ -1,13 +1,179 @@
+:root {
+
+    /* colors */
+    --red-1: #a92c24;
+    --red-2: #bd5344;
+    --red-3: #cf7566;
+    --red-4: #de978a;
+    --red-5: #ecb9b0;
+    --red-6: #f7dcd7;
+    --white: #ffffff;
+
+    /* fonts */
+    --h1: 'Overpass';
+  }
+
 body {
     margin: 0;
     padding: 0;
 }
 
-
-#video {
+.menu-toggle {
+    right: 5%;
+    color: var(--white);
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
     display: none;
 }
 
+
+
+#video {
+    display: none;
+ 
+}
+
+
 #info-img {
+    display: block;  
+}
+
+b {
+    color: purple;
+}
+
+
+.wrapper {
+    max-width: 1924px;
+    font: helvetica, arial, sans-serif;
+}
+
+/* rammer child lige under */
+.wrapper > * {
+    border: 2px solid #f08c00;
+    background-color: var(--white);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  
+}
+
+.main-header {
+    grid-area: header;
+    height: 20px;
+}
+
+.content {
+    grid-area: content;  
+
+}
+
+.content h1 {
+    font-family: var(--h1);
+    font-weight: 2000;
+    font-size: 5rem;
+}
+
+.content p {
+    font-family: 'Overpass';
+    font-size: 1.5rem; 
+}
+
+.main-nav {
+    display: none;
+
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+button {
+    background-color: var(--red-1);
+    border: none;
+    color: var(--white);
+    padding: 15px 32px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "overpass";
+    font-size: 16px;
+    cursor: pointer;
+    min-width: 200px;
+    outline: none;
+}
+
+button:pressed {
+    background-color: var(--red-2);
+    border: none;
+    }
+
+button:hover {
+    background-color: var(--red-2);
+}
+
+
+
+.main-nav-active {
     display: block;
+
+}
+
+.ad {
+    grid-area: ad;
+ 
+}
+
+.main-footer {
+    grid-area: footer;
+}
+
+.wrapper {
+    margin: 0 2% 0 2%;
+    display: grid;
+    grid-column-gap: 60px;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 
+    "header      header"
+    "ad          ad"
+    "content     content"
+    "footer      footer";
+}
+
+@media (min-width: 800px) {
+    .wrapper {
+        background-color: deeppink;
+        grid-template-columns: 1fr 2fr 2fr;
+        grid-template-areas: 
+        "nav     content    ad"
+        "nav     content    ad"
+        "nav     content    ad"
+        "footer  footer     footer";
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .main-nav {
+        grid-area: nav;
+        display: block;
+        height: 96vh;
+    
+    }
+
+    .main-header {
+        display: none;
+        height: 100px;
+    }
 }
