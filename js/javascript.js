@@ -27,6 +27,11 @@ let forsideIndhold = [
 
 ];
 
+let linkDestination = [
+  ["link til siden1", "navn på link1",],
+  ["link til siden2", "navn på link2",],
+  ["link til siden3", "navn på link3",],
+]
 
 
 
@@ -34,7 +39,12 @@ let forsideIndhold = [
 function changeFrontPage(i) {
   document.getElementById("info-headline").innerHTML = forsideIndhold[i][0];
   document.getElementById("info-img").src = forsideIndhold[i][1];
+  document.getElementById("info-img").alt = forsideIndhold[i][1];
   document.getElementById("info-text").innerHTML = forsideIndhold[i][2];
+
+  /* ændre href og navn til links */
+  document.getElementById("link").href = linkDestination[i][0];
+  document.getElementById("link").innerHTML = linkDestination[i][1];
 
 
   /*hvis man skal display en video istedet for et bilede så går man ind og 
