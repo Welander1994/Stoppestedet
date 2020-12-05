@@ -24,6 +24,16 @@ h1 {
     margin: 20px;
 }
 
+h3 {
+    font-family: 'Overpass';
+    font-weight: 1000;
+    font-size: 1rem;
+}
+
+p {
+    font-size: 0.7rem;
+}
+
 .form-container {
     background-color: white;
     width: 40%;
@@ -56,3 +66,22 @@ label {
 .button:hover {
     background-color: var(--red-3);
 }
+
+.glemtkode {
+    color: var(--red-1);
+    text-decoration: underline;
+    margin: 20px;
+}
+
+#besked {
+    display: none;
+    margin: 20px;
+}
+
+.invalid {
+    color: var(--red-1);
+  }
+
+.valid {
+    color: green;
+  }

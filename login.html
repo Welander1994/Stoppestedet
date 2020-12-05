@@ -4,9 +4,9 @@
     <meta charset="UFT-8">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,300;0,900;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/stylesheet.css">
     <link rel="stylesheet" href="/css/login.css">
     <script src="https://kit.fontawesome.com/9d426a8111.js" crossorigin="anonymous"></script>
+    <script src="/js/login.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Login på frivillig portal</title>
 </head>
@@ -19,10 +19,21 @@
             <label for="brugernavn">Brugernavn</label>
             <input class="input" type="text" id="brugernavn" name="brugernavn" required>
             <label for="kode">Adgangskode</label>
-            <input class="input" type="password" id="kode" name="kode" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Skal indeholde mindst ét tal samt både store og små bogstaver og være minimum 8 karakterer langt!" required>
+            <input class="input" type="password" id="kode" name="kode" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Skal indeholde mindst ét tal og være minimum 8 karakterer langt!" required>
             <input class="button" type="submit" value="Log ind">
         </form>
     </div>
+
+    <div>
+        <p class="glemtkode">Glemt kode eller brugernavn?</p>
+    </div>
+
+    <div id="besked">
+        <h3>Adgangskoden skal indeholde følgende:</h3>
+        <p id="tal" class="invalid">Minimum ét tal</p>
+        <p id="karakterer" class="invalid">Minimum otte karakterer</p>
+      </div>
+
 
 </body>
 </html>
