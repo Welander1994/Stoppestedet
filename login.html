@@ -17,7 +17,7 @@
     <div class="form-container">
         <form name="form">
             <label for="brugernavn">Brugernavn</label>
-            <input class="input" type="text" id="brugernavn" name="brugernavn">
+            <input class="input" type="password" id="brugernavn" name="brugernavn">
             <label for="kode">Adgangskode</label>
             <input class="input" type="password" id="kode" name="kode">
             <input class="button" type="submit" id="submit" value="Log ind">
@@ -25,10 +25,17 @@
     </div>
 
     <div>
-        <p class="glemtkode">Glemt kode eller brugernavn?</p>
+        <p id="glemtkode" class="glemtkode">Glemt kode eller brugernavn?</p>
     </div>
 
-    <div id="besked">
+    <!--Besked, der popper op, når man trykker på brugernavn-feltet-->
+    <div id="beskedbesked" class="popbesked">
+        <h3>Brugernavnen må kun indeholde:</h3>
+        <p id="bogstaver" class="invalid">Små bogstaver</p>
+      </div>
+
+    <!--Besked, der popper op, når man trykker på kode-feltet-->
+    <div id="besked" class="popbesked">
         <h3>Adgangskoden skal indeholde følgende:</h3>
         <p id="tal" class="invalid">Minimum ét tal</p>
         <p id="karakterer" class="invalid">Minimum otte karakterer</p>
