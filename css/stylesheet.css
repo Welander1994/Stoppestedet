@@ -34,13 +34,18 @@ body {
  
 }
 
+#video2 {
+    display: none;
+ 
+}
+
 
 #info-img {
     display: block;  
 }
 
 b {
-    color: purple;
+    color: var(--red-1);
 }
 
 
@@ -136,7 +141,26 @@ button:hover {
 
 .main-footer {
     grid-area: footer;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--red-1);
+    font-family: overpass;
+    color: var(--white);
 }
+
+.main-footer i  {
+
+    color: var(--red-1);
+    background-color: var(--white);
+    font-size: 50px;
+    padding: 7px 7px 0 15px;
+    margin-top: 15px;
+    border-radius: 10px;
+    
+    
+}
+
+
 
 .wrapper {
     margin: 0 2% 0 2%;
