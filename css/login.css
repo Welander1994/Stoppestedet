@@ -1,0 +1,25 @@
+:root {
+
+    /* colors */
+    --red-1: #a92c24;
+    --red-2: #bd5344;
+    --red-3: #cf7566;
+    --red-4: #de978a;
+    --red-5: #ecb9b0;
+    --red-6: #f7dcd7;
+    --white: #ffffff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+}
+
+h1 {
+    font-family: 'Overpass';
+}
+
+.form-container {
+    background-color: var(--red-2);
+}
