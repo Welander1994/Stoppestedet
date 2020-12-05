@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UFT-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,300;0,900;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/login.css">
+    <script src="https://kit.fontawesome.com/9d426a8111.js" crossorigin="anonymous"></script>
+    <script src="/js/login.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login på frivillig portal</title>
+</head>
+<body>
+
+    <h1>Log ind på frivillig-/personaleportalen</h1>
+
+    <div class="form-container">
+        <form name="form">
+            <label for="brugernavn">Brugernavn</label>
+            <input class="input" type="password" id="brugernavn" name="brugernavn">
+            <label for="kode">Adgangskode</label>
+            <input class="input" type="password" id="kode" name="kode">
+            <input class="button" type="submit" id="submit" value="Log ind">
+        </form>
+    </div>
+
+    <div>
+        <p id="glemtkode" class="glemtkode">Glemt kode eller brugernavn?</p>
+    </div>
+
+    <!--Besked, der popper op, når man trykker på brugernavn-feltet-->
+    <div id="beskedbesked" class="popbesked">
+        <h3>Brugernavnen må kun indeholde:</h3>
+        <p id="bogstaver" class="invalid">Små bogstaver</p>
+      </div>
+
+    <!--Besked, der popper op, når man trykker på kode-feltet-->
+    <div id="besked" class="popbesked">
+        <h3>Adgangskoden skal indeholde følgende:</h3>
+        <p id="tal" class="invalid">Minimum ét tal</p>
+        <p id="karakterer" class="invalid">Minimum otte karakterer</p>
+      </div>
+
+</body>
+</html>

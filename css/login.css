@@ -1,0 +1,88 @@
+:root {
+
+    /* colors */
+    --red-1: #a92c24;
+    --red-2: #bd5344;
+    --red-3: #cf7566;
+    --red-4: #de978a;
+    --red-5: #ecb9b0;
+    --red-6: #f7dcd7;
+    --white: #ffffff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+    font-size: 1rem;
+}
+
+h1 {
+    font-family: 'Overpass';
+    font-weight: 2000;
+    font-size: 3rem;
+    margin: 20px;
+}
+
+h3 {
+    font-family: 'Overpass';
+    font-weight: 1000;
+    font-size: 1rem;
+}
+
+p {
+    font-size: 0.7rem;
+}
+
+.form-container {
+    background-color: white;
+    width: 40%;
+}
+
+label {
+    margin: 20px;
+}
+
+.input {
+    background-color: var(--red-2);
+    color: white;
+    padding: 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.button {
+    background-color: var(--red-1);
+    font-family: 'Open Sans';
+    color: white;
+    border-radius: 50px;
+    padding: 10px;
+    margin: 20px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--red-3);
+}
+
+.glemtkode {
+    color: var(--red-1);
+    text-decoration: underline;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.popbesked {
+    display: none;
+    margin: 20px;
+}
+
+.invalid {
+    color: var(--red-1);
+  }
+
+.valid {
+    color: green;
+  }
