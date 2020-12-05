@@ -41,6 +41,7 @@ body {
 
 
 #info-img {
+    padding-top: 10%;
     display: block;  
 }
 
@@ -176,7 +177,7 @@ button:hover {
 
 @media (min-width: 800px) {
     .wrapper {
-        background-color: deeppink;
+ 
         grid-template-columns: 1fr 2fr 2fr;
         grid-template-areas: 
         "nav     content    ad"
