@@ -42,7 +42,9 @@ body {
 
 #info-img {
     padding-top: 10%;
-    display: block;  
+    display: block;
+    width: 60vw;
+    padding-left: 15%;  
 }
 
 b {
@@ -57,9 +59,7 @@ b {
 
 /* rammer child lige under */
 .wrapper > * {
-    border: 2px solid #f08c00;
     background-color: var(--white);
-    border-radius: 5px;
     padding: 20px;
 }
 
@@ -71,9 +71,17 @@ nav ul {
 }
 
 .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
     grid-area: header;
-    height: 20px;
+    height: 30px;
 }
+
+.main-header li  {
+  list-style: none;
+}
+
 
 .content {
     grid-area: content;  
@@ -83,7 +91,7 @@ nav ul {
 .content h1 {
     font-family: var(--h1);
     font-weight: 2000;
-    font-size: 5rem;
+    font-size: 3rem;
 }
 
 .content p {
@@ -143,6 +151,7 @@ button:hover {
 .main-footer {
     grid-area: footer;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     background-color: var(--red-1);
     font-family: overpass;
@@ -150,7 +159,6 @@ button:hover {
 }
 
 .main-footer i  {
-
     color: var(--red-1);
     background-color: var(--white);
     font-size: 50px;
@@ -164,7 +172,6 @@ button:hover {
 
 
 .wrapper {
-    margin: 0 2% 0 2%;
     display: grid;
     grid-column-gap: 60px;
     grid-template-columns: 1fr 3fr;
@@ -196,9 +203,29 @@ button:hover {
         height: 96vh;
     
     }
+    .content p {
+        font-family: 'Overpass';
+        font-size: 1.5rem;
+    }
+    .content h1 {
+        font-family: var(--h1);
+        font-weight: 2000;
+        font-size: 5rem;
+    }
+    
+    #info-img {
+    padding-top: 10%;
+    padding-left: 0%;  
+    display: block;
+    width: 35vw;  
+    }
 
     .main-header {
         display: none;
         height: 100px;
+    }
+
+    .main-footer {
+        flex-direction: row;
     }
 }
