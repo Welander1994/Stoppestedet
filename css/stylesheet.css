@@ -7,7 +7,7 @@
     --red-4: #de978a;
     --red-5: #ecb9b0;
     --red-6: #f7dcd7;
-    --white: #ffffff;
+    --white: #fffefb;
 
     /* fonts */
     --h1: 'Overpass';
@@ -27,13 +27,23 @@ body {
     display: none;
 }
 
-#link {
+#content-link {
+    display: flex;
+}
+
+.link {
     background-color: var(--red-1);
     padding: 20px;
-    width: 5vw;
+    width: 14vw;
+    text-align: center;
     color: var(--white);
     display: none;
+    margin: 1%;
+    border-radius: 30px;
+    text-decoration: none;
+    font-family: "overpass";
 }
+
 
 
 
