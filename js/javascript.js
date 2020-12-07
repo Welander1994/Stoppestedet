@@ -1,9 +1,9 @@
 /*tjekker om javascriptet kører*/
 console.log("javascript is running !");
 
-function burgerMenu() {
+function burger() {
   let element = document.getElementById("test");
-  element.classList.toggle("main-nav-active");
+element.classList.toggle("main-nav-active");
 }
 
 /*
@@ -17,7 +17,7 @@ let forsideIndhold = [
   ["Telefonrådgiving",   " ",                "text til 4. emne",],
   ["Peer to Peer",   "/img/img-2.jpg",   "<b>Peer to Peer</b> Odense er et projekt, som er drevet på en masse gode frivillige kræfter, der brænder for at hjælpe psykisk sårbare. <br><br> Som ung eller ny med psykisk sårbarhed kan man miste håbet og troen på, at livet igen kan blive meningsfuldt og godt. Med inspiration fra en anden, som kender det fra eget liv, kan man genfinde modet og troen på at kunne bo i egen bolig, komme i arbejde/uddannelse, komme i gang med en aktivitet eller ud af ensomhed.<br><br><b>Fælles for de frivillige er, at de selv har egne erfaringer med psykisk sårbarhed, som de ønsker at bruge konstruktivt til at hjælpe og inspirere andre.</b><br><br>Erfaringsudveksling i mødet mellem frivillige og peers, peermatch eller gruppeaktiviteter er med til at bygge bro til et bedre liv, skabe netværk, give øget <b>handlekraft</b> og <b>håb</b> om recovery.<br><br>De frivillige gennemgår et uddannelsesforløb på 34 timer, hvor de arbejder med at omdanne levede erfaringer med psykisk sårbarhed til peer kompetencer, så de på kompetent vis kan være der på den andens præmis.<br><br> <b>Læs mere her - knap/link!!!</b>",],
   ["Samværsvenner",   "/img/img-2.jpg",   "text til 3. emne",],
-  ["Skibhus Kabyssen",   " ",                "text til 4. emne",],
+  ["Skibhus Kabyssen",   "/img/img-2.jpg",                "text til 4. emne",],
   ["Bisidder",   "/img/img-2.jpg",   "text til 2. emne",],
   ["Pårørende grupper",   "/img/img-2.jpg",   "Har du en psykisk sårbar eller sindslidende tæt inde på livet? Et familiemedlem eller en ven? Og har du lyst til at mødes med andre i samme situation? <br><br>Vi etablerer løbende grupper for pårørende, hvor man mødes anonymt over ca. ti gange og deler udfordringer og erfaringer.<br><br><b>Du kan kontakte vores koordinator, hvis du vil vide mere.</b><br><br><b>Koordinator Torben Haagerup:</b><br>Telefon: <b>22 96 28 82</b><br>E-mail: <b>info@stoppestedet.dk</b>",],
   ["Frivillig",  " ",                "text til 4. emne",],
@@ -31,6 +31,17 @@ let linkDestination = [
   ["link til siden1", "navn på link1",],
   ["link til siden2", "navn på link2",],
   ["link til siden3", "navn på link3",],
+  ["link til siden4", "navn på link4",],
+  ["link til siden5", "navn på link5",],
+  ["link til siden6", "navn på link6",],
+  ["link til siden6", "navn på link7",],
+  ["link til siden7", "navn på link8",],
+  ["link til siden8", "navn på link9",],
+  ["link til siden9", "navn på link10",],
+  ["link til siden11", "navn på link11",],
+  ["link til siden12", "navn på link12",],
+  ["link til siden13", "navn på link13",],
+
 ]
 
 
@@ -58,6 +69,8 @@ function changeFrontPage(i) {
     document.getElementById("video2").style.display = "none";
     document.getElementById("info-img").style.display = "block";
   }
+  let element = document.getElementById("test");
+  element.classList.toggle("main-nav-active");
 
 }
 

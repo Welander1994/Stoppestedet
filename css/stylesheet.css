@@ -80,6 +80,7 @@ nav ul {
 
 .main-header i  {
     font-size: 1.5rem;
+    display: block;
   }
 
 
@@ -128,10 +129,7 @@ button {
     outline: none;
 }
 
-button:pressed {
-    background-color: var(--red-2);
-    border: none;
-    }
+
 
 button:hover {
     background-color: var(--red-2);
@@ -140,20 +138,33 @@ button:hover {
 .main-nav {
     position: absolute;
     background-color: var(--red-1);
-    width: 60vw;
+    width: 90vw;
     height: 170vw;
-    left: -100%;
+    left: -110%;
     transition: 1s;
+    transition-timing-function: ease;
+    z-index: 999;
 }
 
+.main-nav i {
+    color: var(--white);
+    font-size: 1.5rem;
+
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+}
 
 .main-nav-active {
     position: absolute;
     background-color: var(--red-1);
-    width: 60vw;
+    width: 90vw;
     height: 170vw;
     left: 0;
     transition: 1s;
+    transition-timing-function: ease;
 }
 
 .ad {
@@ -219,6 +230,7 @@ button:hover {
         width: 10vw;
         height: 50vw;
         left: 0;
+        top: 0;
         transition: 0s;
         
         
@@ -244,6 +256,11 @@ button:hover {
         display: none;
         height: 100px;
     }
+
+    .main-nav i  {
+        font-size: 1.5rem;
+        display: none;
+      }
 
     .main-footer {
         flex-direction: row;
