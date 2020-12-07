@@ -63,12 +63,14 @@ body {
 
 #video {
     display: none;
- 
+    width: 100%;
+    padding-top: 5%;
 }
 
 #video2 {
     display: none;
- 
+    width: 100%;
+    padding-top: 5%;
 }
 
 
@@ -208,6 +210,9 @@ button:hover {
 
 .ad {
     grid-area: ad;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
  
 }
 
