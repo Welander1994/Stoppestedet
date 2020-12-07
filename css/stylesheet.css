@@ -32,6 +32,8 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+
 .menu-toggle {
     right: 5%;
     color: var(--white);
@@ -176,7 +178,7 @@ button:hover {
     position: absolute;
     background-color: var(--red-1);
     width: 90vw;
-    height: 170vw;
+    height: 210vw;
     left: -110%;
     transition: 1s;
     transition-timing-function: ease;
@@ -195,10 +197,10 @@ button:hover {
 }
 
 .main-nav-active {
-    position: absolute;
+    position: fixed;
     background-color: var(--red-1);
     width: 90vw;
-    height: 170vw;
+    height: 210vw;
     left: 0;
     transition: 1s;
     transition-timing-function: ease;
@@ -295,6 +297,11 @@ button:hover {
         border-radius: 30px;
         text-decoration: none;
         font-family: "overpass";
+    }
+
+    #content-link {
+        display: flex;
+        flex-direction: row;
     }
 
     #info-img {
