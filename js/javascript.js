@@ -69,6 +69,16 @@ function changeFrontPage(i) {
     document.getElementById("video2").style.display = "none";
     document.getElementById("info-img").style.display = "block";
   }
+
+
+  if (i == 4,5) {
+    document.getElementById("link").style.display = "block";
+  }
+  else {
+    document.getElementById("link").style.display = "none";
+  }
+
+
   let element = document.getElementById("test");
   element.classList.toggle("main-nav-active");
 

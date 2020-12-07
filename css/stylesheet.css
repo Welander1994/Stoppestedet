@@ -27,6 +27,14 @@ body {
     display: none;
 }
 
+#link {
+    background-color: var(--red-1);
+    padding: 20px;
+    width: 5vw;
+    color: var(--white);
+    display: none;
+}
+
 
 
 #video {
@@ -84,11 +92,6 @@ nav ul {
   }
 
 
-.main-header li  {
-  list-style: none;
-}
-
-
 .content {
     grid-area: content;  
 
@@ -127,6 +130,27 @@ button {
     cursor: pointer;
     min-width: 200px;
     outline: none;
+    list-style: none;
+}
+
+.main-nav a {
+    background-color: var(--red-1);
+    border: none;
+    color: var(--white);
+    padding: 15px 32px;
+    width: 136px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "overpass";
+    font-size: 16px;
+    cursor: pointer;
+    max-width: 200px;
+    outline: none;
+}
+
+.main-nav a:hover {
+    background-color: var(--red-2);
 }
 
 
@@ -221,6 +245,9 @@ button:hover {
         flex-direction: column;
     }
 
+
+    
+
     .main-nav {
         grid-area: nav;
         display: block;
@@ -230,11 +257,10 @@ button:hover {
         width: 10vw;
         height: 50vw;
         left: 0;
-        top: 0;
-        transition: 0s;
-        
-        
+       
+      
     }
+
     .content p {
         font-family: 'Overpass';
         font-size: 1.5rem;
@@ -266,3 +292,4 @@ button:hover {
         flex-direction: row;
     }
 }
+    
