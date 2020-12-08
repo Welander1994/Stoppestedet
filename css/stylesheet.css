@@ -24,7 +24,7 @@ body {
 
 .Stoppested-skilt{
    position: absolute;
-   height: 100vh;
+   height: 99vh;
    width: 18vw;
 }
 
@@ -99,8 +99,8 @@ nav ul {
     margin: 0;
     padding: 0;
     position: absolute;
-    left: 70px;
-    top: 120px;
+    left: 75px;
+    top: 160px;
   
 }
 
@@ -131,7 +131,7 @@ nav ul {
 
 .content p {
     font-family: 'Overpass';
-    font-size: 1.5rem; 
+    font-size: 1rem; 
 }
 
 
@@ -147,7 +147,7 @@ button {
     background-color: var(--red-1);
     border: none;
     color: var(--white);
-    padding: 10px;
+    padding: 6.93px;
     text-align: left;
     text-decoration: none;
     display: inline-block;
@@ -163,8 +163,8 @@ button {
     background-color: var(--red-1);
     border: none;
     color: var(--white);
-    padding: 15px 32px;
-    width: 136px;
+    padding:6.93px;
+    width: 186px;
     text-align: left;
     text-decoration: none;
     display: inline-block;
@@ -231,7 +231,7 @@ button:hover {
     flex-direction: column;
     justify-content: space-around;
     background-color: var(--red-1);
-    font-family: overpass;
+    font-family: 'Overpass';
     color: var(--white);
 }
 
@@ -292,12 +292,12 @@ button:hover {
 
     .content p {
         font-family: 'Overpass';
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     .content h1 {
         font-family: var(--h1);
         font-weight: 2000;
-        font-size: 5rem;
+        font-size: 3rem;
     }
     
     .link {
@@ -376,7 +376,7 @@ button:hover {
   height: 32px;
   opacity: 0.6;
   transition: 0.3s;
-  font-size: 15px;
+  font-size: 1rem;
 }
 
 .button:hover {opacity: 1}
