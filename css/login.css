@@ -17,11 +17,18 @@ body {
     font-size: 1rem;
 }
 
+.content {
+    width: 50%;
+    margin: auto;
+}
+
 h1 {
     font-family: 'Overpass';
     font-weight: 2000;
     font-size: 3rem;
-    margin: 20px;
+    display: flex;
+    justify-content: center;
+    margin: 5%;
 }
 
 h3 {
@@ -34,33 +41,37 @@ p {
     font-size: 0.7rem;
 }
 
-.form-container {
-    background-color: white;
-    width: 40%;
-}
-
-label {
-    margin: 20px;
-}
-
 .input {
     background-color: var(--red-2);
     color: white;
     padding: 10px;
-    margin-left: 20px;
-    margin-bottom: 20px;
     width: 100%;
+    border: none;
 }
 
 .button {
     background-color: var(--red-1);
     font-family: 'Open Sans';
+    font-size: 0.7rem;
+    text-align: center;
     color: white;
+    border: none;
     border-radius: 50px;
     padding: 10px;
-    margin: 20px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
     width: 200px;
     cursor: pointer;
+}
+
+#tilbage {
+    background-color: var(--red-5);
+}
+
+.a {
+    text-decoration: none;
+    color: var(--red-1);
 }
 
 .button:hover {
@@ -70,13 +81,11 @@ label {
 .glemtkode {
     color: var(--red-1);
     text-decoration: underline;
-    margin: 20px;
     cursor: pointer;
 }
 
 .popbesked {
     display: none;
-    margin: 20px;
 }
 
 .invalid {
@@ -86,3 +95,4 @@ label {
 .valid {
     color: green;
   }
+
