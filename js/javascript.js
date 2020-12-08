@@ -102,3 +102,8 @@ function changeFrontPage(i) {
 [i][1] - her vælger du dit billede
 [i][2] - her vælger du din brødtekst
 */
+
+function coronaInfo(){
+  let element = document.getElementById("ac-wrapper");
+  element.classList.toggle("ac-wrapper-active");
+}
