@@ -17,26 +17,26 @@
 </head>
 
 <body>
-    <section class="wrapper">
+    <section class="kontaktform">
         <h2>Kontakt os</h2>
         <div id="errorMessage"></div>
-        <form id="myForm">
-            <div class="inputField">
+        <form onsubmit="return validation()">
+            <div class="input-field">
                 <input type="text" placeholder="Navn" id="navn">
             </div>
-            <div class="inputField">
+            <div class="input-field">
                 <input type="text" placeholder="Emne" id="emne">
             </div>
-            <div class="inputField">
+            <div class="input-field">
                 <input type="text" placeholder="Telefon" id="telefon">
             </div>
-            <div class="inputField">
+            <div class="input-field">
                 <input type="text" placeholder="Email" id="email">
             </div>
-            <div class="inputField">
+            <div class="input-field">
                 <textarea placeholder="Besked" id="besked"></textarea>
             </div>
-            <div class="Knap">
+            <div class="knap">
                 <input type="submit">
             </div>
         </form>
