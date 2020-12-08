@@ -26,6 +26,7 @@ body {
    position: absolute;
    height: 99vh;
    width: 18vw;
+   display: none;
 }
 
 /* rammer child lige under */
@@ -275,7 +276,12 @@ button:hover {
     }
 
 
-    
+    .Stoppested-skilt{
+        position: absolute;
+        height: 99vh;
+        width: 18vw;
+        display: block;
+     }
 
     .main-nav {
         grid-area: nav;
@@ -302,7 +308,7 @@ button:hover {
     
     .link {
         background-color: var(--red-1);
-        padding: 20px;
+        padding: 10px;
         width: 14vw;
         text-align: center;
         color: var(--white);
