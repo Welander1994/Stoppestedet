@@ -32,7 +32,7 @@ let linkDestination = [
   [" ", " ",],
   [" ", " ",],
   ["https://www.peertopeerodense.dk/", "Læs mere her",],
-  ["https://odense.drk.dk/aktiviteter/ensomhed/samvaerdighed/", "Læs mere her ",],
+  ["https://odense.drk.dk/vores-arbejde/faellesskaber-2/samvaerdighed/", "Læs mere her ",],
   ["https://www.facebook.com/skibhuskabyssen/?fref=ts", "Læs mere her","Find os på Goolge Maps","https://www.google.com/maps/dir//55.40317,10.39636/@55.3982504,10.3815749,14z",],
   ["https://sind.dk/faa-hjaelp/faa-en-sind-bisidder", "Læs mere her ",],
   ["link til siden8", "navn på link",],
