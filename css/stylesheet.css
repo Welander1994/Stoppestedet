@@ -57,7 +57,7 @@ body {
 
 .link {
     background-color: var(--red-1);
-    padding: 20px;
+    padding: 10px;
     width: 50vw;
     text-align: center;
     color: var(--white);
@@ -92,17 +92,11 @@ b {
     color: var(--red-1);
 }
 
-
-
-
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    position: absolute;
-    left: 75px;
-    top: 160px;
-  
+    
 }
 
 .main-header {
@@ -148,7 +142,7 @@ button {
     background-color: var(--red-1);
     border: none;
     color: var(--white);
-    padding: 6.93px;
+    padding: 15px 32px;
     text-align: left;
     text-decoration: none;
     display: inline-block;
@@ -164,8 +158,8 @@ button {
     background-color: var(--red-1);
     border: none;
     color: var(--white);
-    padding:6.93px;
-    width: 186px;
+    padding: 15px 32px;
+    width: 100%;
     text-align: left;
     text-decoration: none;
     display: inline-block;
@@ -187,9 +181,7 @@ button:hover {
 }
 
 .main-nav {
-    position: absolute;
     background-color: var(--red-1);
-    width: 90vw;
     height: 210vw;
     left: -110%;
     transition: 1s;
@@ -273,6 +265,9 @@ button:hover {
 
     nav ul {
         flex-direction: column;
+        position: absolute;
+        left: 75px;
+        top: 160px;
     }
 
 
@@ -282,6 +277,10 @@ button:hover {
         width: 18vw;
         display: block;
      }
+     button {
+        padding: 6.93px;
+    }
+    
 
     .main-nav {
         grid-area: nav;
@@ -292,8 +291,6 @@ button:hover {
         width: 10vw;
         height: 50vw;
         left: 0;
-       
-      
     }
 
     .content p {
@@ -340,6 +337,11 @@ button:hover {
         font-size: 1.5rem;
         display: none;
       }
+
+      .main-nav a {
+        padding:6.93px;
+        width: 186px;
+    }
 
     .main-footer {
         flex-direction: row;
