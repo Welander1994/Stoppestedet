@@ -1,3 +1,15 @@
+:root {
+
+    /* colors */
+    --red-1: #a92c24;
+    --red-2: #bd5344;
+    --red-3: #cf7566;
+    --red-4: #de978a;
+    --red-5: #ecb9b0;
+    --red-6: #f7dcd7;
+    --white: #fffefb;
+    --black: #000000
+  }
 *{
     margin: 0;
     padding: 0;
@@ -7,7 +19,7 @@
 }
 
 body{
-    background: #FFFEFB;
+    background:var(--white);
 }
 
 .kontaktform{
@@ -17,9 +29,11 @@ body{
   transform: translate(-50%,-50%);
   max-width: 350px;
   width: 100%;
-  background: pink;
   padding: 25px;
-  box-shadow: 4px 4px 2px rgb(195, 141, 202);
+  
+}
+.kontaktform ::placeholder{
+    color: var(--white);
 }
 .kontaktform h2{
     font-family: "Overpass";
@@ -31,10 +45,24 @@ body{
 }
 .kontaktform .input-field input[type="text"], .kontaktform textarea{
     width: 100%;
-    border: 1px solid chartreuse;
+    background: var(--red-1);
     padding: 10px;
+    color: #ffffff;
+    border: 0;
+    box-shadow: 1px 1px var(--red-2);
+
+}
+.kontaktform .input-field input[type="text"], .kontaktform textarea{
+    width: 100%;
+    background: var(--red-1);
+    padding: 10px;
+    color: #ffffff;
+    border: 0;
+    box-shadow: 1px 1px var(--red-2);
+
 }
 .kontaktform textarea{
+    border: 0;
     height:80px ;
     resize: none;
 }
@@ -43,7 +71,7 @@ body{
     margin-top: 15px;
     padding: 10px;
     width: 50%;
-    background: plum;
+    background:var(--red-1);
     color:#ffffff;
     font-weight: 800;
     border-radius:30px;
