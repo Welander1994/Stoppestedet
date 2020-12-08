@@ -104,6 +104,10 @@ function changeFrontPage(i) {
 */
 
 function coronaInfo(){
+coronaVar = setTimeout(coronaFunction, 2000);
+}
+
+function coronaFunction(){
   let element = document.getElementById("ac-wrapper");
   element.classList.toggle("ac-wrapper-active");
 }

@@ -249,7 +249,56 @@ button:hover {
     "content     content"
     "footer      footer";
 }
+.ac-wrapper {
+    position: fixed;
+    bottom: 100px;
+    right: -100%;
+    color: #ffffff;
+    padding: 0%;
+    font-family: 'Overpass';
+    font-size: 20px;
+    transition: 1s;
+    transition-timing-function: ease;
+}
 
+.ac-wrapper-active{
+    position: fixed;
+    bottom: 100px;
+    right: 8;
+    color: #ffffff;
+    padding: 0%;
+    font-family: 'Overpass';
+    font-size: 20px;
+    transition: 1s;
+    transition-timing-function: ease;
+}
+
+
+#popup {
+    background: none repeat scroll 0 0 #de978a;
+    height: 500px;
+    position: right;
+    width: 300px;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+.coronaButton{
+  Border-radius: 42px;
+  background-color: #a92c24;
+  border: none;
+  color: #ffffff;
+  width: 52px;
+  height: 32px;
+  opacity: 0.6;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+.button:hover {opacity: 1}
 @media (min-width: 800px) {
     .wrapper {
  
@@ -329,45 +378,58 @@ button:hover {
     .main-footer {
         flex-direction: row;
     }
+
+    .ac-wrapper {
+        position: fixed;
+        bottom: 20px;
+        right: -120%;
+        color: #ffffff;
+        padding: 0%;
+        font-family: 'Overpass';
+        font-size: 20px;
+        transition: 1s;
+        transition-timing-function: ease;
+    }
+    
+    .ac-wrapper-active{
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        color: #ffffff;
+        padding: 0%;
+        font-family: 'Overpass';
+        font-size: 20px;
+        transition: 1s;
+        transition-timing-function: ease;
+    }
+    
+    
+    #popup {
+        background: none repeat scroll 0 0 #de978a;
+        height: 300px;
+        position: right;
+        width: 500px;
+        padding-bottom: 50px;
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+    
+    }
+    
+    .coronaButton{
+      Border-radius: 42px;
+      background-color: #a92c24;
+      border: none;
+      color: #ffffff;
+      width: 52px;
+      height: 32px;
+      opacity: 0.6;
+      transition: 0.3s;
+      font-size: 15px;
+    }
+    
+    .button:hover {opacity: 1}
+    
 }
 
-#ac-wrapper {
-    position: fixed;
-    bottom: 20px;
-    right: 20%;
-    color: #ffffff;
-    padding: 0%;
-    font-family: 'Overpass';
-    font-size: 20px;
-}
 
-#ac-wrapper-active{
-    right: 20px;
-}
-
-
-#popup {
-    background: none repeat scroll 0 0 #de978a;
-    height: 300px;
-    position: right;
-    width: 500px;
-    padding-bottom: 50px;
-    padding-top: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
-
-}
-
-#coronaButton{
-  Border-radius: 42px;
-  background-color: #a92c24;
-  border: none;
-  color: #ffffff;
-  width: 52px;
-  height: 32px;
-  opacity: 0.6;
-  transition: 0.3s;
-  font-size: 15px;
-}
-
-.button:hover {opacity: 1}
