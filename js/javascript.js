@@ -36,7 +36,7 @@ let linkDestination = [
   ["https://www.facebook.com/skibhuskabyssen/?fref=ts", "Læs mere her", "Find os på Goolge Maps", "https://www.google.com/maps/dir//55.40317,10.39636/@55.3982504,10.3815749,14z",],
   ["https://sind.dk/faa-hjaelp/faa-en-sind-bisidder", "Læs mere her ",],
   ["link til siden8", "navn på link",],
-  ["link til siden9", "Ansøg her ",],
+  ["bliv-frivillig.html", "Ansøg her ",],
   ["https://www.google.com/maps/place/Stoppestedet/@55.397935,10.3826765,17z/data=!3m1!4b1!4m5!3m4!1s0x464cdff90c4050f7:0xff528f137bc4a11a!8m2!3d55.397935!4d10.3848652", "Find os på Goolge Maps",],
   [" ", " ",],
   [" ", " ",],
