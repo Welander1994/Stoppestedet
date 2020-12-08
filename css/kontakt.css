@@ -29,20 +29,18 @@ body{
   transform: translate(-50%,-50%);
   max-width: 350px;
   width: 100%;
-  padding: 25px;
-  
 }
 .kontaktform ::placeholder{
     color: var(--white);
 }
 .kontaktform h2{
     font-family: "Overpass";
-    text-align: center;
     margin-bottom: 20px;
 }
 .kontaktform .input-field{
     margin-bottom: 10px;
 }
+
 .kontaktform .input-field input[type="text"], .kontaktform textarea{
     width: 100%;
     background: var(--red-1);
@@ -50,17 +48,17 @@ body{
     color: #ffffff;
     border: 0;
     box-shadow: 1px 1px var(--red-2);
-
 }
-.kontaktform .input-field input[type="text"], .kontaktform textarea{
+
+.kontaktform .input-field input[type="text"]:focus, .kontaktform textarea:focus{
     width: 100%;
-    background: var(--red-1);
+    background: var(--white);
     padding: 10px;
-    color: #ffffff;
-    border: 0;
+    color: var(--black);
+    border: 1px solid var(--black);
     box-shadow: 1px 1px var(--red-2);
-
 }
+
 .kontaktform textarea{
     border: 0;
     height:80px ;
@@ -80,8 +78,8 @@ body{
 .kontaktform #errorMessage{
     margin-bottom: 20px;
     padding: 0px;
-    background:seagreen;
+    background:var(--red-4);
     text-align: center;
     font-size: 0.8rem;
-    transition: all 0.5s ease;
+    transition: all 0.9s ease;
 }
