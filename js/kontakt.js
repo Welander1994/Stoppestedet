@@ -14,30 +14,30 @@ function validation() {
     let tekst;
 
     if (navn.length < 5) {
-        tekst = "Please Enter valid Name";
+        tekst = "Indtast et navn der er længere end 5 bogstaver";
         errorMessage.innerHTML = tekst;
         return false;
     }
     if (emne.length < 10) {
-        tekst = "Please Enter Correct Subject";
+        tekst = "Indtast et emne der er længere end 10 bogstaver";
         errorMessage.innerHTML = tekst;
         return false;
     }
     if (isNaN(telefon) || telefon.length != 8) {
-        tekst = "Please Enter valid Phone Number";
+        tekst = "Indtast et rigtigt telefonnummer";
         errorMessage.innerHTML = tekst;
         return false;
     }
     if (email.indexOf("@") == -1 || email.length < 6) {
-        tekst = "Please Enter valid Email";
+        tekst = "Indtast et rigtigt email";
         errorMessage.innerHTML = tekst;
         return false;
     }
-    if (besked.length <= 140) {
-        tekst = "Please Enter More Than 140 Characters";
+    if (besked.length <= 50) {
+        tekst = "Indtast mere end 50 karakterer";
         errorMessage.innerHTML = tekst;
         return false;
     }
-    alert("Form Submitted Successfully!");
+    alert("Tak, din besked er sendt - vi kontakter dig så hurtigt vi kan!");
     return true;
 }

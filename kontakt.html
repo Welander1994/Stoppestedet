@@ -18,23 +18,28 @@
 
 <body>
     <section class="kontaktform">
-        <h2>Kontakt os</h2>
+        <h1>Kontakt os</h1>
         <div id="errorMessage"></div>
         <form onsubmit="return validation()">
             <div class="input-field">
-                <input type="text" placeholder="Navn" id="navn">
+                <label for="titel">Navn</label>
+                <input type="text" id="navn">
             </div>
             <div class="input-field">
-                <input type="text" placeholder="Emne" id="emne">
+                <label for="titel">Emne</label>
+                <input type="text" id="emne">
             </div>
             <div class="input-field">
-                <input type="text" placeholder="Telefon" id="telefon">
+                <label for="titel">Telefon</label>
+                <input type="text" id="telefon">
             </div>
             <div class="input-field">
-                <input type="text" placeholder="Email" id="email">
+                <label for="titel">Email</label>
+                <input type="text" id="email">
             </div>
             <div class="input-field">
-                <textarea placeholder="Besked" id="besked"></textarea>
+                <label for="titel">Besked</label>
+                <textarea id="besked"></textarea>
             </div>
             <div class="knap">
                 <input type="submit">
