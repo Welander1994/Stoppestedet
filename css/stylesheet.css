@@ -266,3 +266,38 @@ button:hover {
         flex-direction: row;
     }
 }
+
+#ac-wrapper {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #ffffff;
+    padding: 0%;
+    font-family: 'Overpass';
+    font-size: 20px;
+}
+#popup {
+    background: none repeat scroll 0 0 #de978a;
+    height: 300px;
+    position: right;
+    width: 500px;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+.button{
+  Border-radius: 42px;
+  background-color: #a92c24;
+  border: none;
+  color: #ffffff;
+  width: 52px;
+  height: 32px;
+  opacity: 0.6;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+.button:hover {opacity: 1}

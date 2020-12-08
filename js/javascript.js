@@ -75,6 +75,7 @@ function changeFrontPage(i) {
 }
 
 
+
 /*
 [i][0] - her vælger du din overskrift
 [i][1] - her vælger du dit billede
