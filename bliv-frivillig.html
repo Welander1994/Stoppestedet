@@ -6,9 +6,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,300;0,900;1,400&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="/css/kontakt.css">
+    <link rel="stylesheet" href="/css/bliv-frivillig.css">
     <link rel="icon" type="image/png" href="/img/stoppested-fav.png" />
-    <script src="/js/kontakt.js" defer></script>
+    <script src="/js/bliv-frivillig.js" defer></script>
     <script src="https://kit.fontawesome.com/9d426a8111.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <section class="kontaktform">
+    <section class="ansoeningsform">
         <h1>Bliv frivillig</h1>
         <div id="errorMessage"></div>
         <form onsubmit="return validation()">
@@ -26,19 +26,51 @@
                 <input type="text" id="navn">
             </div>
             <div class="input-field">
-                <label for="titel">Emne</label>
-                <input type="text" id="emne">
-            </div>
-            <div class="input-field">
                 <label for="titel">Telefon</label>
                 <input type="text" id="telefon">
+
             </div>
             <div class="input-field">
                 <label for="titel">Email</label>
                 <input type="text" id="email">
+
+            </div>
+
+            <div class="input-field">
+                <label for="titel">Alder</label>
+                <input type="text" id="alder">
+            </div>
+
+            <div class="input-field">
+                <label for="titel">Hvad motivere dig til at blive frivillig på Stoppestedet?</label>
+                <textarea id="besked"></textarea>
             </div>
             <div class="input-field">
-                <label for="titel">Besked</label>
+                <label for="titel">Hvad ønsker du at få ud af dit frivillige arbejde?</label>
+                <textarea id="besked"></textarea>
+            </div>
+            <div class="input-field">
+                <label for="titel">Har du erfaring med frivillig arbejde? hvilke/hvordan?</label>
+                <textarea id="besked"></textarea>
+            </div>
+            <div class="input-field">
+                <label for="titel">Hvilke frivillige opgaver, vil du helst lave?</label>
+                <textarea id="besked"></textarea>
+            </div>
+            <div class="input-field">
+                <label for="titel">Hvad motivere dig til at blive frivillig på Stoppestedet?</label>
+                <textarea id="besked"></textarea>
+            </div>
+            <div class="input-field">
+                <label for="titel">Hvad ønsker du at få ud af dit frivillige arbejde?</label>
+                <textarea id="besked"></textarea>
+            </div>
+            <div class="input-field">
+                <label for="titel">Har du erfaring med frivillig arbejde? hvilke/hvordan?</label>
+                <textarea id="besked"></textarea>
+            </div>
+            <div class="input-field">
+                <label for="titel">Hvilke frivillige opgaver, vil du helst lave?</label>
                 <textarea id="besked"></textarea>
             </div>
             <div class="knap">
