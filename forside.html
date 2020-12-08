@@ -15,7 +15,9 @@
     
     <div class="wrapper">
         <header class="main-header">
-            <li><button onclick="changeFrontPage(0)">Stoppestedet</button></li>
+
+            <button onclick="changeFrontPage(0)">Stoppestedet</button>
+
             <div onclick="burger()"><i class="fas fa-bars"></i></div></header>
         <nav class="main-nav" id="test">
             <ul>
@@ -31,9 +33,9 @@
                 <li><button onclick="changeFrontPage(9)">Frivillig</button></li>
                 <li><button onclick="changeFrontPage(10)">Åbningstider</button></li>
                 <li><button onclick="changeFrontPage(11)">Kontakt</button></li>
-                <li><button onclick="changeFrontPage(12)">Log ind</button></li>
+        
+                <li><a href="login.html" onclick="burger()">Log ind</a></li>
                 
-                <a id="link" href="#">dwaw</a>
 
             </ul>
         </nav>
@@ -41,6 +43,10 @@
             <h1 id="info-headline">Vi er her for at hjælpe dig</h1>
             <p id="info-text">Stoppestedet er et SIND værested, der har eksisteret siden først i 90’erne. <b>Hos os er alle velkomne.</b> Stoppestedet er et anonymt værested, hvilket betyder, at tilbuddene kan benyttes frivilligt og uden visitering.
                 <br><br> <b>Tak fordi du er her.</b> Hvis du vil vide mere om, hvem vi er, hvordan vi kan hjælpe dig og, hvordan du endda kan hjælpe os, er du velkommen til at læse mere om vores forskellige muligheder for lige netop dig.</p>
+            <section id="content-link">
+                <a class="link" id="link" href="#" target="_blank">dwaw</a>
+                <a class="link" id="link2" href="#" target="_blank">dwaw</a>
+            </section>
         </article>
   
         <div class="ad">  
@@ -49,11 +55,11 @@
 
 
             <video id="video" width="648px" controls>
-                <source src="/img/video-1.mp4" type="video/mp4">
+                <source src="/img/bliv frivillig på stoppestedet.mp4" type="video/mp4">
                 Your browser does not support HTML video.
               </video>
               <video id="video2" width="648px" controls>
-                <source src="/img/video-1.mp4" type="video/mp4">
+                <source src="/img/Stoppestedet søger frivillige.mp4" type="video/mp4">
                 Your browser does not support HTML video.
               </video>
 

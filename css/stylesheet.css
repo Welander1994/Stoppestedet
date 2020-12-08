@@ -7,7 +7,7 @@
     --red-4: #de978a;
     --red-5: #ecb9b0;
     --red-6: #f7dcd7;
-    --white: #ffffff;
+    --white: #fffefb;
 
     /* fonts */
     --h1: 'Overpass';
@@ -17,6 +17,22 @@ body {
     margin: 0;
     padding: 0;
 }
+.wrapper {
+    max-width: 1924px;
+    font: helvetica, arial, sans-serif;
+}
+
+/* rammer child lige under */
+.wrapper > * {
+    background-color: var(--white);
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
 
 .menu-toggle {
     right: 5%;
@@ -27,16 +43,34 @@ body {
     display: none;
 }
 
+#content-link {
+    display: flex;
+    flex-direction: column;
+}
 
+.link {
+    background-color: var(--red-1);
+    padding: 20px;
+    width: 50vw;
+    text-align: center;
+    color: var(--white);
+    display: none;
+    margin: 1%;
+    border-radius: 30px;
+    text-decoration: none;
+    font-family: "overpass";
+}
 
 #video {
     display: none;
- 
+    width: 100%;
+    padding-top: 5%;
 }
 
 #video2 {
     display: none;
- 
+    width: 100%;
+    padding-top: 5%;
 }
 
 
@@ -52,16 +86,7 @@ b {
 }
 
 
-.wrapper {
-    max-width: 1924px;
-    font: helvetica, arial, sans-serif;
-}
 
-/* rammer child lige under */
-.wrapper > * {
-    background-color: var(--white);
-    padding: 20px;
-}
 
 nav ul {
     list-style: none;
@@ -82,11 +107,6 @@ nav ul {
     font-size: 1.5rem;
     display: block;
   }
-
-
-.main-header li  {
-  list-style: none;
-}
 
 
 .content {
@@ -127,6 +147,27 @@ button {
     cursor: pointer;
     min-width: 200px;
     outline: none;
+    list-style: none;
+}
+
+.main-nav a {
+    background-color: var(--red-1);
+    border: none;
+    color: var(--white);
+    padding: 15px 32px;
+    width: 136px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "overpass";
+    font-size: 16px;
+    cursor: pointer;
+    max-width: 200px;
+    outline: none;
+}
+
+.main-nav a:hover {
+    background-color: var(--red-2);
 }
 
 
@@ -139,7 +180,7 @@ button:hover {
     position: absolute;
     background-color: var(--red-1);
     width: 90vw;
-    height: 170vw;
+    height: 210vw;
     left: -110%;
     transition: 1s;
     transition-timing-function: ease;
@@ -158,10 +199,10 @@ button:hover {
 }
 
 .main-nav-active {
-    position: absolute;
+    position: fixed;
     background-color: var(--red-1);
     width: 90vw;
-    height: 170vw;
+    height: 210vw;
     left: 0;
     transition: 1s;
     transition-timing-function: ease;
@@ -169,6 +210,9 @@ button:hover {
 
 .ad {
     grid-area: ad;
+    display: flex;
+    flex-direction: column;
+    
  
 }
 
@@ -221,6 +265,9 @@ button:hover {
         flex-direction: column;
     }
 
+
+    
+
     .main-nav {
         grid-area: nav;
         display: block;
@@ -230,11 +277,10 @@ button:hover {
         width: 10vw;
         height: 50vw;
         left: 0;
-        top: 0;
-        transition: 0s;
-        
-        
+       
+      
     }
+
     .content p {
         font-family: 'Overpass';
         font-size: 1.5rem;
@@ -245,6 +291,24 @@ button:hover {
         font-size: 5rem;
     }
     
+    .link {
+        background-color: var(--red-1);
+        padding: 20px;
+        width: 14vw;
+        text-align: center;
+        color: var(--white);
+        display: none;
+        margin: 1%;
+        border-radius: 30px;
+        text-decoration: none;
+        font-family: "overpass";
+    }
+
+    #content-link {
+        display: flex;
+        flex-direction: row;
+    }
+
     #info-img {
     padding-top: 10%;
     padding-left: 0%;  

@@ -11,10 +11,13 @@
     <title>Login på frivillig portal</title>
 </head>
 <body>
-
+    <div class="button" id="tilbage">
+        <a class="a" href="forside.html">Tilbage til hjemmeside</a>
+    </div>
     <h1>Log ind på frivillig-/personaleportalen</h1>
 
-    <div class="form-container">
+<div class="content">
+    <div>
         <form name="form">
             <label for="brugernavn">Brugernavn</label>
             <input class="input" type="password" id="brugernavn" name="brugernavn">
@@ -30,16 +33,16 @@
 
     <!--Besked, der popper op, når man trykker på brugernavn-feltet-->
     <div id="beskedbesked" class="popbesked">
-        <h3>Brugernavnen må kun indeholde:</h3>
+        <h3>Brugernavn må kun indeholde:</h3>
         <p id="bogstaver" class="invalid">Små bogstaver</p>
-      </div>
+    </div>
 
     <!--Besked, der popper op, når man trykker på kode-feltet-->
     <div id="besked" class="popbesked">
         <h3>Adgangskoden skal indeholde følgende:</h3>
         <p id="tal" class="invalid">Minimum ét tal</p>
         <p id="karakterer" class="invalid">Minimum otte karakterer</p>
-      </div>
-
+    </div>
+</div>
 </body>
 </html>
