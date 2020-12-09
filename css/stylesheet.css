@@ -182,6 +182,7 @@ button:hover {
 }
 
 .main-nav {
+    position: fixed;
     background-color: var(--red-1);
     height: 210vw;
     left: -110%;
