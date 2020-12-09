@@ -301,6 +301,7 @@ button:hover {
   font-size: 15px;
 }
 
+
 #button:hover {opacity: 1}
 @media (min-width: 800px) {
     .wrapper {
@@ -448,6 +449,12 @@ button:hover {
         opacity: 1
     }
 
-    
+    .icons ul{
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        right: 2%;
+        bottom: 10%;
+    }
 }
 
