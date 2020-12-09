@@ -241,7 +241,9 @@ button:hover {
     
 }
 
-
+#menu-button {
+    text-align: center;
+}
 
 .wrapper {
     display: grid;
@@ -290,7 +292,7 @@ button:hover {
 
 }
 
-.coronaButton{
+#coronaButton{
   Border-radius: 42px;
   background-color: #a92c24;
   border: none;
@@ -300,7 +302,7 @@ button:hover {
   font-size: 15px;
 }
 
-.button:hover {opacity: 1}
+#button:hover {opacity: 1}
 @media (min-width: 800px) {
     .wrapper {
  
