@@ -294,8 +294,6 @@ button:hover {
   background-color: #a92c24;
   border: none;
   color: #ffffff;
-  width: 52px;
-  height: 32px;
   opacity: 0.6;
   transition: 0.3s;
   font-size: 15px;
@@ -416,7 +414,7 @@ button:hover {
         color: #ffffff;
         padding: 0%;
         font-family: 'Overpass';
-        font-size: 20px;
+        font-size: 1rem;
         transition: 1s;
         transition-timing-function: ease;
     }
@@ -424,41 +422,31 @@ button:hover {
     
     #popup {
         background: none repeat scroll 0 0 #de978a;
-        height: 300px;
+        height: 250px;
         position: right;
-        width: 500px;
+        width: 400px;
         padding-bottom: 50px;
         padding-top: 30px;
         padding-left: 30px;
         padding-right: 30px;
     
     }
-    
-    .coronaButton{
-      Border-radius: 42px;
-      background-color: #a92c24;
-      border: none;
-      color: #ffffff;
-      width: 52px;
-      height: 32px;
-      opacity: 0.6;
-      transition: 0.3s;
-      font-size: 15px;
-    }
-    
-    .button:hover {opacity: 1}
-    
+
+    #coronaButton{
+        Border-radius: 42px;
+        background-color: #a92c24;
+        border: none;
+        color: #ffffff;
+        opacity: 0.6;
+        transition: 0.3s;
+        font-size: 1rem;
+        text-align: center;
 }
 
-#coronaButton{
-  Border-radius: 42px;
-  background-color: #a92c24;
-  border: none;
-  color: #ffffff;
-  width: 52px;
-  height: 32px;
-  opacity: 0.6;
-  transition: 0.3s;
-  font-size: 1rem;
+    #coronaButton:hover {
+        opacity: 1
+    }
+
+    
 }
 
