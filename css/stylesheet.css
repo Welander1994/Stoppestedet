@@ -16,6 +16,7 @@
 body {
     margin: 0;
     padding: 0;
+  
 }
 .wrapper {
     max-width: 1924px;
@@ -38,6 +39,7 @@ body {
 .content {
     display: flex;
     flex-direction: column;
+    padding-top: 20%;
 }
 
 
@@ -71,7 +73,7 @@ body {
 #video {
     display: none;
     width: 100%;
-    padding-top: 5%;
+    padding-top: 15%;
 }
 
 #video2 {
@@ -216,7 +218,7 @@ button:hover {
     grid-area: ad;
     display: flex;
     flex-direction: column;
-    
+    padding-top: 20%;
  
 }
 
@@ -489,5 +491,6 @@ button:hover {
     .icons ul{
         bottom: 5%;   
     }
+
 }
 
