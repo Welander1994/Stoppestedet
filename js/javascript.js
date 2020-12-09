@@ -22,7 +22,6 @@ let forsideIndhold = [
   ["Åbningstider", "/img/kort.png", "<b>Åbningstider for værestedet:</b><br>Mandag, onsdag, torsdag og fredag:<br>11–22<br>Tirsdag:<br>11–15<br>Lørdag, søndag og helligdage:<br>14–20<br>Værestedet Stoppestedet har åbent alle helligdage med undtagelse af d. 1. januar.<br><br><b>Åbningstider for telefonrådgivningen:</b><br>Hverdage kl. 11-22<br>Lørdag lukket.<br>Søndag og helligdage kl. 17-22<br><br><b>Åbningstider i ungegruppen:</b><br>Onsdag kl. 18-21<br><br><b>Skibhus Kabyssen:</b><br>Tirsdag kl. 16–20", "Kort over hvor Stoppestedet ligger",],
   ["Kontakt", "", "Du er altid velkommen til at kontakte os – det er anonymt og uforpligtende. Send en mail i nedenstående formular eller ring, så besvarer vi din henvendelse hurtigst muligt.<br><br><br><b>Telefon</b><br>Værestedet Stoppestedet: <b>66 19 02 65</b><br>Kontor: <b>66 19 03 26</b><br><br><br><b>Adresse</b><br>SIND værestedet Stoppestedet<br>Jernbanegade 24B<br>5000 Odense C.<br><br><b>Leder Birgit Boding</b><br>Tlf: <b>66 19 03 26/23 41 45 61</b><br>E-mail: <b>bbhan@odense.dk</b><br><br>",],
   [" ", " ", "",],
-
 ];
 
 /* array til link knapper */
