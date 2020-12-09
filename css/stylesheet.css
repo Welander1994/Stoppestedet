@@ -280,7 +280,6 @@ button:hover {
 
 #popup {
     background: none repeat scroll 0 0 #de978a;
-    height: 500px;
     position: right;
     width: 300px;
     padding-bottom: 50px;
@@ -423,7 +422,6 @@ button:hover {
     
     #popup {
         background: none repeat scroll 0 0 #de978a;
-        height: 250px;
         position: right;
         width: 400px;
         padding-bottom: 50px;
