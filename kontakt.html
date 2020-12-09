@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UFT-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,300;0,900;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/kontakt.css">
+    <link rel="icon" type="image/png" href="/img/stoppested-fav.png" />
+    <script src="/js/kontakt.js" defer></script>
+    <script src="https://kit.fontawesome.com/9d426a8111.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Stoppestedet, et værested for psykisk sårbare i Odense. Her er der plads til alle også dig. Du kan finde alt fra ungegruppen, telefonrådgivning, Peer to Peer, bisidder, samværsvenner samt meget mere. ">
+    <title>Kontakt Stoppestedet</title>
+</head>
+
+<body>
+    <section class="kontaktform">
+        <h1>Kontakt os</h1>
+        <div id="errorMessage"></div>
+        <form onsubmit="return validation()">
+            <div class="input-field">
+                <label for="titel">Navn</label>
+                <input type="text" id="navn">
+            </div>
+            <div class="input-field">
+                <label for="titel">Emne</label>
+                <input type="text" id="emne">
+            </div>
+            <div class="input-field">
+                <label for="titel">Telefon</label>
+                <input type="text" id="telefon">
+            </div>
+            <div class="input-field">
+                <label for="titel">Email</label>
+                <input type="text" id="email">
+            </div>
+            <div class="input-field">
+                <label for="titel">Besked</label>
+                <textarea id="besked"></textarea>
+            </div>
+            <div class="knap">
+                <input type="submit">
+            </div>
+        </form>
+
+    </section>
+
+</body>
+
+</html>

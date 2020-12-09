@@ -1,0 +1,88 @@
+:root {
+
+    /* colors */
+    --red-1: #a92c24;
+    --red-2: #bd5344;
+    --red-3: #cf7566;
+    --red-4: #de978a;
+    --red-5: #ecb9b0;
+    --red-6: #f7dcd7;
+    --white: #fffefb;
+    --black: #000000;
+    --whitereal: #ffffff;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Open Sans";
+    font-size: 1rem;
+}
+
+body{
+    background:var(--white);
+}
+
+.ansoeningsform{
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 350px;
+  width: 100%;
+}
+
+.ansoeningsform h1{
+    font-family: "Overpass";
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.ansoeningsform .input-field{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    font-weight: 900;
+    padding-bottom: 20px;
+}
+
+.ansoeningsform .input-field input[type="text"], .ansoeningsform textarea{
+    border : 0px solid #000000;
+    border-bottom-width : 1px;
+    background-color : transparent;
+}
+
+.ansoeningsform .input-field input[type="text"]:focus, .ansoeningsform textarea:focus{
+    width: 100%;
+    background: var(--white);
+    padding: 10px;
+    color: var(--black);
+    border: 1px solid var(--black);
+    box-shadow: 1px 1px var(--red-2);
+}
+
+.ansoeningsform textarea{
+    border : 0px solid #000000;
+    border-bottom-width : 1px;
+    background-color : transparent;
+    height:80px ;
+    resize: none;
+}
+.ansoeningsform .knap input[type="submit"]{
+    border: 0;
+    margin-top: 15px;
+    padding: 10px;
+    width: 50%;
+    background:var(--red-1);
+    color:var(--whitereal);
+    border-radius:30px;
+    cursor: pointer;
+}
+.ansoeningsform #errorMessage{
+    margin-bottom: 20px;
+    padding: 0px;
+    background:var(--red-4);
+    text-align: center;
+    font-size: 0.8rem;
+    transition: all 0.5s ease;
+}
