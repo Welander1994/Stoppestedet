@@ -44,11 +44,11 @@ body{
 
 .kontaktform .input-field input[type="text"], .kontaktform textarea{
     width: 100%;
-    background: var(--red-1);
+    background: var(--red-6);
     padding: 10px;
-    color:var(--whitereal);
+    color:var(--black);
     border: 0;
-    box-shadow: 1px 1px var(--red-2);
+    box-shadow: 1px 1px var(--red-5);
 }
 
 .kontaktform .input-field input[type="text"]:focus, .kontaktform textarea:focus{
@@ -57,7 +57,7 @@ body{
     padding: 10px;
     color: var(--black);
     border: 1px solid var(--black);
-    box-shadow: 1px 1px var(--red-2);
+    box-shadow: 1px 1px var(--red-6);
 }
 
 .kontaktform textarea{
