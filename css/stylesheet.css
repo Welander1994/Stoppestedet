@@ -39,7 +39,7 @@ body {
 .content {
     display: flex;
     flex-direction: column;
-    padding-top: 20%;
+    padding-top: 10%;
 }
 
 
@@ -125,6 +125,7 @@ nav ul {
     font-family: var(--h1);
     font-weight: 2000;
     font-size: 3rem;
+    line-height: 3rem;
 }
 
 .content p {
@@ -386,6 +387,7 @@ button:hover {
     .content p {
         font-family: 'Overpass';
         font-size: 1rem;
+        margin: 0;
     }
     .content h1 {
         font-family: var(--h1);
@@ -435,7 +437,6 @@ button:hover {
     .main-footer {
         flex-direction: row;
     }
-
     .ac-wrapper {
         position: fixed;
         bottom: 20px;
@@ -491,6 +492,18 @@ button:hover {
         bottom: 5%;   
     }
 
+    .main-nav a {
+        padding-left: 20px;
+        width: 173px;
+    }
+    .main-nav button {
+        padding-left: 20px;
+    }
 
+    .content {
+        display: flex;
+        flex-direction: column;
+        padding-top: 22%;
+    }
 }
 
