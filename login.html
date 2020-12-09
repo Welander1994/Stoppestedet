@@ -20,16 +20,23 @@
     <div class="button" id="tilbage">
         <a class="a" href="forside.html">Tilbage til hjemmeside</a>
     </div>
+
     <h1>Log ind på frivillig-/personaleportalen</h1>
 
-    <div class="content">
+    <section class="content">
         <div>
             <form name="form">
-                <label for="brugernavn">Brugernavn</label>
-                <input class="input" type="password" id="brugernavn" name="brugernavn">
-                <label for="kode">Adgangskode</label>
-                <input class="input" type="password" id="kode" name="kode">
-                <input class="button" type="submit" id="submit" value="Log ind">
+                <div class="inputfelt">
+                    <label for="brugernavn">Brugernavn</label>
+                    <input class="input" type="text" id="brugernavn" name="brugernavn">
+                </div>
+                <div class="inputfelt">
+                    <label for="kode">Adgangskode</label>
+                    <input class="input" type="password" id="kode" name="kode">
+                </div>
+                <div>
+                    <input class="button" type="submit" id="submit" value="Log ind">
+                </div>
             </form>
         </div>
 
@@ -49,7 +56,7 @@
             <p id="tal" class="invalid">Minimum ét tal</p>
             <p id="karakterer" class="invalid">Minimum otte karakterer</p>
         </div>
-    </div>
+    </section>
 </body>
 
 </html>
