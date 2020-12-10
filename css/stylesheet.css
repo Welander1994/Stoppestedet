@@ -244,6 +244,16 @@ button:hover {
     
 }
 
+#forsiden {
+    position: absolute;
+    top: 7%;
+    left: 40%;
+    background-color: rgba(0, 0, 0, 0);
+    width: 260px;
+    height: 70px;
+    cursor: pointer;
+}
+
 #menu-button {
     text-align: center;
 }
@@ -355,11 +365,22 @@ button:hover {
         "footer  footer     footer";
     }
 
+    .top-nav {
+        display: none;
+        justify-content: space-between;
+    }
+    
+
     nav ul {
+     
         flex-direction: column;
         position: absolute;
-        left: 75px;
+        left: 65px;
         top: 160px;
+        padding: 0  0 0 15%;
+        background-color: rgba(0, 0, 0, 0);
+        border-bottom: 4px solid #3d3d3d;
+        border-top: 4px solid #3d3d3d;
     }
     .icons {
         background-color: rgba(0, 0, 0, 0);
@@ -380,10 +401,7 @@ button:hover {
         padding: 6.93px;
     }
     
-    #frontPage{
-        position: absolute;
-        top:100px;
-    }
+  
 
     .main-nav {
         grid-area: nav;
