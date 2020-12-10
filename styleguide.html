@@ -10,27 +10,28 @@
         rel="stylesheet">
     <link rel="stylesheet" href="/css/styleguide.css">
     <link rel="icon" type="image/png" href="/img/stoppested-fav.png" />
+    <script src="/js/styleguide.js" defer></script>
     <title>Styleguide</title>
 </head>
 
 <body>
-    <div class="grid-container"></div>
+    <div class="grid-container1"></div>
     <header>
         <div class="sidebar">
-            <a href="#home"> <img alt="Stoppestedets logo" src="img/stoppestedets-logo.png"></a>
-            <a href="#home"> Introduktion</a>
-            <a href="#services"> Tone of voice</a>
-            <a href="#services"> Logo</a>
-            <a href="#services"> Farver</a>
-            <a href="#clients"> Typografi</a>
-            <a href="#clients"> Grafiske elementer</a>
-            <a href="#contact"> Grid</a>
+            <a href="#"> <img alt="Stoppestedets logo" src="img/stoppestedets-logo.png"></a>
+            <a onclick="introFunction()" href="#intro"> Introduktion</a>
+            <a onclick="tovFunction()" href="#toneofvoice"> Tone of voice</a>
+            <a onclick="logoFunction()" href="#logo"> Logo</a>
+            <a onclick="farverFunction()" href="#farver"> Farver</a>
+            <a onclick="typoFunction()" href="#typografi"> Typografi</a>
+            <a onclick="gfFunction()" href="#grafiskeelementer"> Grafiske elementer</a>
+            <a onclick="gridFunction()" href="#grid"> Grid</a>
         </div>
     </header>
 
     <main>
         <h1>Styleguide til projekt 6 | Stoppestedet</h1>
-        <h2>Introduktion</h2>
+        <h2 id="intro">Introduktion</h2>
         <p>This side navigation is of full height (100%) and always shown.</p>
         <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut
             quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et.
@@ -40,7 +41,7 @@
             Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
         </d>
 
-        <h2>Tone of Voice</h2>
+        <h2 id="tov">Tone of Voice</h2>
         <p>This side navigation is of full height (100%) and always shown.</p>
         <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut
             quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et.
@@ -50,16 +51,13 @@
             Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
         </p>
 
-        <h2>Logo</h2>
-        <p>This side navigation is of full height (100%) and always shown.</p>
-        <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut
-            quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et.
-            Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut
-            quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et.
-            Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        </p>
-        <h2>Farver</h2>
+        <h2 id="logo">Logo</h2>
+        <p>Logoet benyttes i projektet er Stoppestedets eget logo. Ses herunder: </p>
+        <div class="farve-kasse">
+            <img src=" /img/stoppestedets-logo.png" alt="Stoppestedets logo">
+        </div>
+
+        <h2 id="farver">Farver</h2>
         <p>Farvene der er benyttet i dette projekt er følgende:</p>
         <div class="farve-kasse farve-kasse9">
             #000000
@@ -90,11 +88,7 @@
             #ffffff
         </div>
 
-
-
-
-
-        <h2>Typografi</h2>
+        <h2 id="typo">Typografi</h2>
         <h3>Skrifttype og Størrelse</h3>
         <p>Der benyttes i dette projekt skrifttyperne Overpass til overskrifter og Open Sans til brødteksterne.
             Overskrifterne er 3rem og brødteksterne er 1rem. Se eksempel herunder: </p>
@@ -121,26 +115,37 @@
                 dig.</p>
         </div>
 
-        <h2>Grafiske elementer</h2>
-        <p>This side navigation is of full height (100%) and always shown.</p>
-        <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut
-            quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et.
-            Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut
-            quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et.
-            Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        </p>
-        <h2>Grid</h2>
-        <p>This side navigation is of full height (100%) and always shown.</p>
-        <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut
-            quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et.
-            Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut
-            quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et.
-            Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        </p>
-
-    </main>
+        <h2 id="gf">Grafiske elementer</h2>
+        <h3>Illustrationer</h3>
+        <p>Hjemmesiden er designet med illustrationer, som vi selv har lavet. Se eksmepler herunder: </p>
+        <div class="farve-kasse gf-img">
+            <img src="/img/ungegruppe.png" alt="Ungegruppen">
+            <img src="/img/bisidder.png" alt="Bisidder">
+            <img src="/img/forside.png" alt="Holder om og af hianden">
+            <img src="img/kort.png" alt="Ungegruppen">
+            <img src="/img/omos.png" alt="Ungegruppen">
+            <img src="/img/ungegruppe.png" alt="Ungegruppen">
+            <img src="/img/peerToPeer.png" alt="Ungegruppen">
+            <img src="/img/pårørende.png" alt="Ungegruppen">
+            <img src="/img/samværsvenner.png" alt="Ungegruppen">
+            <img src="/img/skibhus.png" alt="Ungegruppen">
+            <img src="/img/telefonrådgivning.png" alt="Ungegruppen">
+            <img src="/img/Stoppestedet_1.png" alt="Ungegruppen">
+        </div>
+        <h3>Billeder</h3>
+        <p>De to billeder som benyttes på hjemmesiden er billeder af Silje og Camilla. Se eksempel herunder: </p>
+        <div class="farve-kasse gf-img">
+            <img src="/img/kontakt_2.png" alt="Ungegruppen">
+        </div>
+        <h2 id="grid">Grid</h2>
+        <p>Hjemmesiden er bygget op via grid, herunder ses det grid, der er benyttet til hjemmesiden når den vises på en
+            computer. Når siden vises på mobil ligger det forskellige indhold under hinaden. </p>
+        <div class="grid-container">
+            <div class="item2">Menu</div>
+            <div class="item3">Main</div>
+            <div class="item4">Right</div>
+            <div class="item5">Footer</div>
+        </div>
 </body>
 
 </html>
