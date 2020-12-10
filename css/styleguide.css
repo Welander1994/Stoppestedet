@@ -67,22 +67,30 @@ body {
   
   
   main {
-    margin-left: 180px;
+    max-width: 100%;
+    margin-left: 220px;
     padding: 0px 10px;
     grid-area: m;
   }
   h1{
       font-family: var(--h1);
       font-size: 3rem;
+      line-height: 3rem;
   }
   h2{
     font-family: var(--h1);
     font-size: 2rem;
 }
+p{
+   max-width: 800px;
+}
+b{
+    color: var(--red-1);
+}
 
 /* farver*/
 .farve-kasse{
-    width: 98%;
+    width: 95%;
     height: 100%;
     padding: 10px;
     display: flex;
