@@ -62,14 +62,14 @@ function changeFrontPage(i) {
      skriver nummeret fra changeFontPage(i), så den ved hvor den skal vise video i stedet for billede*/
   if (i == 9) {
     document.getElementById("info-img").style.display = "none";
-  
-  var nums = ["video", "video2"];
 
-for( var j = 0; j < nums.length; j++ ) {
-  document.getElementById(nums[j]).style.display = "block";
-}
+    var nums = ["video", "video2"];
 
-} else {
+    for (var j = 0; j < nums.length; j++) {
+      document.getElementById(nums[j]).style.display = "block";
+    }
+
+  } else {
     document.getElementById("video").style.display = "none";
     document.getElementById("video2").style.display = "none";
     document.getElementById("info-img").style.display = "block";
