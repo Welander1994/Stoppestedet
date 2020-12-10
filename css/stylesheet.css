@@ -304,12 +304,13 @@ button:hover {
   font-size: 15px;
 }
 
-.icons ul{
+.icons {
+    background-color: rgba(0, 0, 0, 0);
     position: absolute;
     margin: 0;
     padding: 0;
     right: 0%;
-    bottom: 45%; 
+    bottom: 35%; 
 }
 .icons ul li{
     list-style: none;
@@ -360,7 +361,14 @@ button:hover {
         left: 75px;
         top: 160px;
     }
-
+    .icons {
+        background-color: rgba(0, 0, 0, 0);
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        right: 0%;
+        bottom: 15%; 
+    }
 
     .Stoppested-skilt{
         position: absolute;
@@ -372,6 +380,10 @@ button:hover {
         padding: 6.93px;
     }
     
+    #frontPage{
+        position: absolute;
+        top:100px;
+    }
 
     .main-nav {
         grid-area: nav;
