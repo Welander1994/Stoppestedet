@@ -69,6 +69,9 @@ body {
     text-decoration: none;
     font-family: "overpass";
 }
+.link:hover {
+    background-color: var(--red-3);
+}
 
 #video {
     display: none;
@@ -505,17 +508,17 @@ button:hover {
 
     #coronaButton{
         Border-radius: 42px;
-        background-color: #a92c24;
+        background-color: var(--red-1);
         border: none;
         color: #ffffff;
-        opacity: 0.6;
+        opacity: 1;
         transition: 0.3s;
         font-size: 1rem;
         text-align: center;
 }
 
     #coronaButton:hover {
-        opacity: 1
+        background-color: var(--red-3);
     }
 
     .icons ul{
