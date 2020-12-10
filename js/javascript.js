@@ -62,15 +62,19 @@ function changeFrontPage(i) {
   /* hvis man skal display en video istedet for et bilede så går man ind og 
      skriver nummeret fra changeFontPage(i), så den ved hvor den skal vise video i stedet for billede*/
   if (i == 9) {
-    document.getElementById("video").style.display = "block";
-    document.getElementById("video2").style.display = "block";
     document.getElementById("info-img").style.display = "none";
-  } else {
+  
+  var nums = ["video", "video2"];
+
+for( var j = 0; j < nums.length; j++ ) {
+  document.getElementById(nums[j]).style.display = "block";
+}
+
+} else {
     document.getElementById("video").style.display = "none";
     document.getElementById("video2").style.display = "none";
     document.getElementById("info-img").style.display = "block";
   }
-
 
   /* kontroller hvor knapperne skal vise*/
   if (i == 4 || i == 5 || i == 6 || i == 7 || i == 9 || i == 10 || i == 11) {
