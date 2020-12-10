@@ -30,4 +30,11 @@ function gridFunction() {
     elmnt.scrollIntoView();
 }
 
-
+function knapFunction() {
+    var elmnt = document.getElementById("knap");
+    elmnt.scrollIntoView();
+}
+function inputFunction() {
+    var elmnt = document.getElementById("input");
+    elmnt.scrollIntoView();
+}

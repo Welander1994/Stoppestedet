@@ -26,20 +26,16 @@
             <a onclick="typoFunction()" href="#typografi"> Typografi</a>
             <a onclick="gfFunction()" href="#grafiskeelementer"> Grafiske elementer</a>
             <a onclick="gridFunction()" href="#grid"> Grid</a>
+            <a onclick="knapFunction()" href="#knap"> Knap</a>
+            <a onclick="inputFunction()" href="#input"> Inputfelt</a>
         </div>
     </header>
 
     <main>
         <h1>Styleguide til projekt 6 | Stoppestedet</h1>
         <h2 id="intro">Introduktion</h2>
-        <p>This side navigation is of full height (100%) and always shown.</p>
-        <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut
-            quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et.
-            Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut
-            quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et.
-            Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        </d>
+        <p>Her ses gruppe 1s styleguide til projekt 6, som er udarbejdet i samarbejde med værestedet Stoppestedet i
+            Odense. </p>
 
         <h2 id="tov">Tone of Voice</h2>
         <p>This side navigation is of full height (100%) and always shown.</p>
@@ -139,13 +135,41 @@
         </div>
         <h2 id="grid">Grid</h2>
         <p>Hjemmesiden er bygget op via grid, herunder ses det grid, der er benyttet til hjemmesiden når den vises på en
-            computer. Når siden vises på mobil ligger det forskellige indhold under hinaden. </p>
+            computer. Når siden vises på mobil ligger det forskellige indhold under hinanden. </p>
+        <div class="farve-kasse">
+            &lt;.grid-container { <br>
+            &lt; margin-bottom: 30px; &lt;display: grid;<br>
+            &lt;grid-gap: 15px;<br>
+            &lt;grid-template-columns: 1fr 2fr 2fr; <br>
+            &lt; grid-template-areas:<br>
+            &lt; 'menu main right '<br>
+            &lt; 'menu main right '<br>
+            &lt; 'menu main right '<br>
+            &lt; 'footer footer footer';<br>
+            &lt; } <br>
+        </div>
         <div class="grid-container">
             <div class="item2">Menu</div>
             <div class="item3">Main</div>
             <div class="item4">Right</div>
             <div class="item5">Footer</div>
         </div>
+
+        <h2 id="knap">Knap</h2>
+        <p>På hjemmesiden er der ligeledes knapper, som ser således ud: </p>
+        <div class="farve-kasse">
+            <div class="button" id="tilbage">
+                <a class="a" href="#knap">Tilbage til hjemmeside</a>
+            </div>
+        </div>
+
+        <h2 id="input">Inputfelt</h2>
+        <p>På hjemmesiden er der ligeledes knapper, som ser således ud: </p>
+        <div class="inputfelt">
+            <label for="brugernavn">Brugernavn</label>
+            <input class="input" type="text" id="brugernavn" name="brugernavn">
+        </div>
+
 </body>
 
 </html>
