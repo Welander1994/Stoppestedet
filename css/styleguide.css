@@ -207,7 +207,7 @@ img{
 }
 
 .input {
-  width: 10%;
+  width: 30%;
   background: var(--red-6);
   padding: 10px;
   color:var(--black);
@@ -216,7 +216,7 @@ img{
 }
 
 .input:focus  {
-  width: 10%;
+  width: 30%;
   background: var(--white);
   padding: 10px;
   color: var(--black);
