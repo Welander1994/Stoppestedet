@@ -9,34 +9,36 @@ function validation() {
     let errorMessage = document.getElementById("errorMessage");
 
     errorMessage.style.padding = "10px";
-
     let tekst;
 
+    // array til fejl beskeder
+    let beskeder = ["Indtast et navn der er længere end 5 bogstaver", "Indtast et rigtigt telefonnummer", "Indtast et rigtigt email", "Indtast en alder mellem 0 - 90 år", "Indtast mere end 50 karakterer", "Tak, din ansøgning er sendt - vi kontakter dig så hurtigt vi kan!"]
+
     if (navn.length < 5) {
-        tekst = "Indtast et navn der er længere end 5 bogstaver";
+        tekst = beskeder[0];
         errorMessage.innerHTML = tekst;
         return false;
     }
     if (isNaN(telefon) || telefon.length != 8) {
-        tekst = "Indtast et rigtigt telefonnummer";
+        tekst = beskeder[1];
         errorMessage.innerHTML = tekst;
         return false;
     }
     if (email.indexOf("@") == -1 || email.length < 6) {
-        tekst = "Indtast et rigtigt email";
+        tekst = beskeder[2];
         errorMessage.innerHTML = tekst;
         return false;
     }
     if (isNaN(alder) || alder.length != 2) {
-        tekst = "Indtast en alder mellem 0 - 90 år";
+        tekst = beskeder[3];
         errorMessage.innerHTML = tekst;
         return false;
     }
     if (besked.length <= 50) {
-        tekst = "Indtast mere end 50 karakterer";
+        tekst = beskeder[4];
         errorMessage.innerHTML = tekst;
         return false;
     }
-    alert("Tak, din ansøgning er sendt - vi kontakter dig så hurtigt vi kan!");
+    alert(beskeder[5]);
     return true;
 }
