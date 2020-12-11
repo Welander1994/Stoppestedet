@@ -8,6 +8,7 @@ function validation() {
     let besked = document.getElementById("besked").value;
     let errorMessage = document.getElementById("errorMessage");
 
+    // Fejlbeskede - her øges padding så beskeden kan ses - er sat til at være 0px - da den ikke skal vises, hvis der ikke er frejl.
     errorMessage.style.padding = "10px";
     let tekst;
 
