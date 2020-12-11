@@ -10,11 +10,6 @@
     --white: #fffefb;
     --black: #000000;
     --whitereal: #ffffff;
-
-    /* fonts */
-    --h1: 'Overpass', sans-serif;
-    --p: 'Open Sans'sans-serif;
-   
   }
 
 *{
@@ -26,7 +21,7 @@ body {
     margin: 0;
     padding: 0;
     font-size: 1rem;
-
+    font-family:'Open Sans',sans-serif;
 }
 
   
@@ -67,15 +62,18 @@ body {
     height: 1000px;
   }
   h1{
-      font-family: var(--h1);
+      font-family: 'Overpass', sans-serif;;
       font-size: 3rem;
       margin-bottom: 60px;
   }
   h2{
     line-height: 2rem;
-    font-family: var(--h1);
+    font-family: 'Overpass', sans-serif;;
     font-size: 2rem;
-}
+  }
+  h3{
+    font-family: 'Overpass', sans-serif;;
+  }
 p{
    max-width: 800px;
 }
