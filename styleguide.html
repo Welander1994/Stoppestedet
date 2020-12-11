@@ -140,24 +140,25 @@
         <h2 id="grid">Grid</h2>
         <p>Hjemmesiden er bygget op via grid, herunder ses det grid, der er benyttet til hjemmesiden når den vises på en
             computer. Når siden vises på mobil ligger det forskellige indhold under hinanden. </p>
-        <div class="farve-kasse">
-            &lt;.grid-container { <br>
-            &lt; margin-bottom: 30px; &lt;display: grid;<br>
-            &lt;grid-gap: 15px;<br>
-            &lt;grid-template-columns: 1fr 2fr 2fr; <br>
-            &lt; grid-template-areas:<br>
-            &lt; 'menu main right '<br>
-            &lt; 'menu main right '<br>
-            &lt; 'menu main right '<br>
-            &lt; 'footer footer footer';<br>
-            &lt; } <br>
-        </div>
+
         <div class="grid-container">
             <div class="item2">Menu</div>
             <div class="item3">Main</div>
             <div class="item4">Right</div>
             <div class="item5">Footer</div>
         </div>
+
+        <textarea id="w3review" name="w3review" rows="10" cols="50">
+            .wrapper {
+ 
+                grid-template-columns: 1fr 2fr 2fr;
+                grid-template-areas: 
+                "nav     content    ad"
+                "nav     content    ad"
+                "nav     content    ad"
+                "footer  footer     footer";
+            }
+            </textarea>
 
         <h2 id="knap">Knap</h2>
         <p>På hjemmesiden er der ligeledes knapper, som ser således ud: </p>
@@ -171,6 +172,7 @@
         <p>På hjemmesiden er der ligeledes knapper, som ser således ud: </p>
         <div class="inputfelt">
             <label for="brugernavn">Brugernavn</label>
+            <br>
             <input class="input" type="text" id="brugernavn" name="brugernavn">
         </div>
 

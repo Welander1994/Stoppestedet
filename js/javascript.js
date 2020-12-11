@@ -2,7 +2,7 @@
 console.log("javascript is running !");
 
 function burger() {
-  let element = document.getElementById("test");
+  let element = document.getElementById("menuBar");
   element.classList.toggle("main-nav-active");
 }
 
@@ -23,6 +23,14 @@ let forsideIndhold = [
   ["Kontakt", "/img/kontakt_2.png", "Du er altid velkommen til at kontakte os – det er anonymt og uforpligtende. Send en mail i nedenstående formular eller ring, så besvarer vi din henvendelse hurtigst muligt.<br><br><b>Telefon</b><br>Værestedet Stoppestedet: <b>66 19 02 65</b><br>Kontor: <b>66 19 03 26</b><br><br><b>Adresse</b><br>SIND værestedet Stoppestedet<br>Jernbanegade 24B<br>5000 Odense C.<br><br><b>Leder Birgit Boding</b><br>Tlf: <b>66 19 03 26/23 41 45 61</b><br>E-mail: <b>bbhan@odense.dk</b><br><br>",],
   [" ", " ", "",],
 ];
+
+
+/*
+[i][0] - her vælger du din overskrift
+[i][1] - her vælger du dit billede
+[i][2] - her vælger du din brødtekst
+[i][3] - her vælger du din alt tag
+*/
 
 /* array til link knapper */
 let linkDestination = [
@@ -92,16 +100,11 @@ function changeFrontPage(i) {
   }
 
 
-  let element = document.getElementById("test");
+  let element = document.getElementById("menuBar");
   element.classList.toggle("main-nav-active");
 
 }
 
-/*
-[i][0] - her vælger du din overskrift
-[i][1] - her vælger du dit billede
-[i][2] - her vælger du din brødtekst
-*/
 
 function coronaInfo() {
   coronaVar = setTimeout(coronaFunction, 2000);
