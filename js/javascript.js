@@ -45,7 +45,7 @@ let linkDestination = [
   ["link til siden8", "navn på link",],
   ["bliv-frivillig.html", "Ansøg her ",],
   ["https://www.google.com/maps/place/Stoppestedet/@55.397935,10.3826765,17z/data=!3m1!4b1!4m5!3m4!1s0x464cdff90c4050f7:0xff528f137bc4a11a!8m2!3d55.397935!4d10.3848652", "Find os på Goolge Maps",],
-  ["kontakt.html", "kontakt",],
+  ["kontakt.html", "Kontakt",],
   [" ", " ",],
 ]
 
@@ -70,14 +70,14 @@ function changeFrontPage(i) {
      skriver nummeret fra changeFontPage(i), så den ved hvor den skal vise video i stedet for billede*/
   if (i == 9) {
     document.getElementById("info-img").style.display = "none";
-  
-  var nums = ["video", "video2"];
 
-for( var j = 0; j < nums.length; j++ ) {
-  document.getElementById(nums[j]).style.display = "block";
-}
+    var nums = ["video", "video2"];
 
-} else {
+    for (var j = 0; j < nums.length; j++) {
+      document.getElementById(nums[j]).style.display = "block";
+    }
+
+  } else {
     document.getElementById("video").style.display = "none";
     document.getElementById("video2").style.display = "none";
     document.getElementById("info-img").style.display = "block";
