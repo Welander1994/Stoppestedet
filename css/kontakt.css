@@ -44,11 +44,11 @@ body{
 
 .kontaktform .input-field input[type="text"], .kontaktform textarea{
     width: 100%;
-    background: var(--red-1);
+    background: var(--red-6);
     padding: 10px;
-    color:var(--whitereal);
+    color:var(--black);
     border: 0;
-    box-shadow: 1px 1px var(--red-2);
+    box-shadow: 1px 1px var(--red-5);
 }
 
 .kontaktform .input-field input[type="text"]:focus, .kontaktform textarea:focus{
@@ -57,7 +57,7 @@ body{
     padding: 10px;
     color: var(--black);
     border: 1px solid var(--black);
-    box-shadow: 1px 1px var(--red-2);
+    box-shadow: 1px 1px var(--red-6);
 }
 
 .kontaktform textarea{
@@ -75,6 +75,9 @@ body{
     border-radius:30px;
     cursor: pointer;
 }
+.kontaktform .knap input[type="submit"]:hover{
+    background:var(--red-3);
+}
 .kontaktform #errorMessage{
     margin-bottom: 20px;
     padding: 0px;
@@ -82,4 +85,35 @@ body{
     text-align: center;
     font-size: 0.8rem;
     transition: all 0.5s ease;
+}
+
+/*Tilbage Kanp, da siden ikke er embeded på hjemmesiden helt optimalt*/
+
+.button {
+    position: relative;
+    background-color: var(--red-1);
+    font-family: 'Open Sans';
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    cursor: pointer;
+}
+#tilbage {
+    background-color: var(--red-1);
+}
+
+#tilbage:hover {
+    background-color: var(--red-3);
+}
+
+.a {
+    text-decoration: none;
+    color: var(--whitereal);
 }

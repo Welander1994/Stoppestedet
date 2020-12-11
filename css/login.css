@@ -8,15 +8,20 @@
     --red-5: #ecb9b0;
     --red-6: #f7dcd7;
     --white: #ffffff;
+    --black: #000000;
+    --whitereal: #ffffff;
 }
 
-body {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     outline: none;
     font-family: "Open Sans";
     font-size: 1rem;
+}
+body {
+    background:var(--white);
 }
 
 .button {
@@ -37,16 +42,16 @@ body {
 }
 
 #tilbage {
-    background-color: var(--red-5);
+    background-color: var(--red-1);
 }
 
 #tilbage:hover {
-    box-shadow: #a92c24;
+    background-color: var(--red-3);
 }
 
 .a {
     text-decoration: none;
-    color: var(--red-1);
+    color: var(--whitereal);
 }
 
 .button:hover {
@@ -57,8 +62,6 @@ h1 {
     font-family: "Overpass";
     font-size: 3rem;
     margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
 }
 
 .content {
@@ -71,29 +74,26 @@ h1 {
 }
 
 .inputfelt {
-    display: flex;
-    flex-direction: column;
     margin-bottom: 10px;
-    font-weight: 900;
-    padding-top: 20px;
 }
 
 .input {
     width: 100%;
-    background: var(--red-1);
+    background: var(--red-6);
     padding: 10px;
-    color:var(--whitereal);
+    color:var(--black);
     border: 0;
-    box-shadow: 1px 1px var(--red-2);
+    box-shadow: 1px 1px var(--red-5);
+    
 }
 
-.input:focus {
+.input:focus  {
     width: 100%;
     background: var(--white);
     padding: 10px;
     color: var(--black);
     border: 1px solid var(--black);
-    box-shadow: 1px 1px var(--red-2);
+    box-shadow: 1px 1px var(--red-6);
 }
 
 .glemtkode {
