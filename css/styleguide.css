@@ -33,7 +33,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 15px 15px;
+    gap: 0;
     grid-template-areas:
       "s m m m m"
       "s m m m m"
@@ -42,7 +42,7 @@ body {
   
   .sidebar {
     height: 100%;
-    width: 190px;
+    width: 250px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -50,7 +50,7 @@ body {
     background-color:var(--red-1);
     overflow-x: hidden;
     padding-top: 16px;
-    grid-area: n;
+    grid-area: s;
   }
   
   .sidebar a {
@@ -73,7 +73,6 @@ body {
   
   main {
     max-width: 100%;
-    margin-left: 220px;
     padding: 0px 10px;
     grid-area: m;
   }
@@ -108,7 +107,6 @@ img{
 /* farver*/
 .farve-kasse{
     width: 95%;
-    height: 100%;
     padding: 10px;
     display: flex;
     flex-direction: column;
