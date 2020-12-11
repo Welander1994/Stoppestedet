@@ -20,7 +20,6 @@ body {
 }
 .wrapper {
     max-width: 1924px;
-    font: helvetica, arial, sans-serif;
 }
 
 .Stoppested-skilt{
@@ -123,7 +122,6 @@ nav ul {
 
 .content h1 {
     font-family: var(--h1);
-    font-weight: 2000;
     font-size: 3rem;
     line-height: 3rem;
 }
@@ -295,7 +293,6 @@ button:hover {
 
 #popup {
     background: none repeat scroll 0 0 #de978a;
-    position: right;
     width: 300px;
     padding-bottom: 50px;
     padding-top: 30px;
@@ -421,7 +418,6 @@ button:hover {
     }
     .content h1 {
         font-family: var(--h1);
-        font-weight: 2000;
         font-size: 3rem;
     }
     
@@ -494,7 +490,6 @@ button:hover {
     
     #popup {
         background: none repeat scroll 0 0 #de978a;
-        position: right;
         width: 400px;
         padding-bottom: 50px;
         padding-top: 30px;
