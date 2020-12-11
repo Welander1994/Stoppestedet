@@ -22,7 +22,7 @@ body {
     padding: 0;
     font-family: var(--p);
     font-size: 1rem;
-  
+
 }
 .grid-container1 {
     display: grid;
