@@ -8,36 +8,38 @@ function validation() {
     let besked = document.getElementById("besked").value;
     let errorMessage = document.getElementById("errorMessage");
 
-
+    // Fejlbeskede - her øges padding så beskeden kan ses - er sat til at være 0px - da den ikke skal vises, hvis der ikke er frejl.
     errorMessage.style.padding = "10px";
-
     let tekst;
 
+    // array til fejl beskeder
+    let beskeder = ["Indtast et navn der er længere end 5 bogstaver", "Indtast et emne der er længere end 10 bogstaver", "Indtast et rigtigt telefonnummer", "Indtast et rigtigt email", "Indtast mere end 50 karakterer", "Tak, din besked er sendt - vi kontakter dig så hurtigt vi kan"]
+
     if (navn.length < 5) {
-        tekst = "Indtast et navn der er længere end 5 bogstaver";
+        tekst = beskeder[0];
         errorMessage.innerHTML = tekst;
         return false;
     }
     if (emne.length < 10) {
-        tekst = "Indtast et emne der er længere end 10 bogstaver";
+        tekst = beskeder[1];
         errorMessage.innerHTML = tekst;
         return false;
     }
     if (isNaN(telefon) || telefon.length != 8) {
-        tekst = "Indtast et rigtigt telefonnummer";
+        tekst = beskeder[2];
         errorMessage.innerHTML = tekst;
         return false;
     }
     if (email.indexOf("@") == -1 || email.length < 6) {
-        tekst = "Indtast et rigtigt email";
+        tekst = beskeder[3];
         errorMessage.innerHTML = tekst;
         return false;
     }
     if (besked.length <= 50) {
-        tekst = "Indtast mere end 50 karakterer";
+        tekst = beskeder[4];
         errorMessage.innerHTML = tekst;
         return false;
     }
-    alert("Tak, din besked er sendt - vi kontakter dig så hurtigt vi kan!");
+    alert(beskeder[5]);
     return true;
 }
