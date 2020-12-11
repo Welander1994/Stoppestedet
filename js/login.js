@@ -55,17 +55,20 @@ myInput.onkeyup = function() {
   }
 }
 
+/* Alert-array*/
+let besked = ["Log ind godkendt","Forkert adgangskode eller brugernavn","Glemt dine oplysninger??"]
+
 /* Hvis input er korrekt i kodefeltet - og der også er indtastet brugernavn, kommer der en "log in godkendt"-alert - hvis ikke, kommer der en anden */
 mySubmit.onclick = function() {
   if(myInput.value.match(taltal) && myInput.value.length >= 8 && myUsername.value.match(bogstaver)) {
-    alert("Log ind godkendt");
+    alert(besked[0]);
   }
   else {
-    alert("Forkert adgangskode eller brugernavn")
+    alert(besked[1])
   }
 }
 
 /* Glemt oplysninger alert */
 myForgot.onclick = function() {
-  alert("Glemt dine oplysninger??")
+  alert(besked[2])
 }
