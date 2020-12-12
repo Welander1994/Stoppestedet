@@ -219,9 +219,7 @@ textarea{
 
 .icons {
   background-color: rgba(0, 0, 0, 0);
-  position: absolute;
-  margin: 0;
-  padding: 0;
+ 
 }
 .icons ul li{
   list-style: none;
