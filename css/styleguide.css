@@ -191,10 +191,6 @@ img{
   background-color: var(--red-3);
 }
 
-.inputfelt {
-    margin-bottom: 70px;
-}
-
 .input {
   width: 30%;
   background: var(--red-6);
