@@ -38,3 +38,9 @@ function inputFunction() {
     var elmnt = document.getElementById("input");
     elmnt.scrollIntoView();
 }
+
+function ikonFunction() {
+    var elmnt = document.getElementById("ikon");
+    elmnt.scrollIntoView();
+}
+
