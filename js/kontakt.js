@@ -40,6 +40,23 @@ function validation() {
         errorMessage.innerHTML = tekst;
         return false;
     }
+
     alert(beskeder[5]);
     return true;
 }
+
+
+/*
+let tekst = "";
+let i;
+for (i = 0; i < 5; i++) {
+  tekst += "Dit nummer er " + i + "<br>";
+}
+
+Dit nummer er 0
+Dit nummer er 1
+Dit nummer er 2
+Dit nummer er 3
+Dit nummer er 4
+
+*/
