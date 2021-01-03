@@ -99,6 +99,16 @@ function changeFrontPage(i) {
     document.getElementById("link2").style.display = "none";
   }
 
+  if (i == 12) {
+    document.getElementById("loginContent").style.display = "block";
+    document.getElementById("info-img").style.display = "none"
+  }
+  else {
+    document.getElementById("loginContent").style.display = "none";
+    document.getElementById("info-img").style.display = "block"
+  }
+
+
 
   let element = document.getElementById("menuBar");
   element.classList.toggle("main-nav-active");

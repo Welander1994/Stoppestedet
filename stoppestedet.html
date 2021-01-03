@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/stylesheet.css">
     <link rel="icon" type="image/png" href="./img/stoppested-fav.png" />
     <script src="./js/javascript.js" defer></script>
+    <script src="./js/login.js" defer></script>
     <script src="https://kit.fontawesome.com/9d426a8111.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
@@ -45,8 +46,8 @@
                 <li><button onclick="changeFrontPage(9)">Frivillig</button></li>
                 <li><button onclick="changeFrontPage(10)">Åbningstider</button></li>
                 <li><button onclick="changeFrontPage(11)">Kontakt</button></li>
-
-                <li><a href="login.html">Log ind</a> <i class="fas fa-sign-in-alt"></i> </li>
+                <li><button onclick="changeFrontPage(12)">Log ind</button></li>
+               
 
             </ul>
         </nav>
@@ -84,6 +85,42 @@
             </video>
 
         </div>
+
+        <section class="loginContent" id="loginContent">
+            <h1>Log ind på webbooking</h1>
+            <div>
+                <form name="form">
+                    <div class="inputfelt">
+                        <label for="brugernavn">Brugernavn</label>
+                        <input class="input" type="text" id="brugernavn" name="brugernavn">
+                    </div>
+                    <div class="inputfelt">
+                        <label for="kode">Adgangskode</label>
+                        <input class="input" type="password" id="kode" name="kode">
+                    </div>
+                    <div>
+                        <input class="button" type="submit" id="submit" value="Log ind">
+                    </div>
+                </form>
+            </div>
+    
+            <div>
+                <p id="glemtkode" class="glemtkode">Glemt kode eller brugernavn?</p>
+            </div>
+    
+            <!--Besked, der popper op, når man trykker på brugernavn-feltet-->
+            <div id="beskedbesked" class="popbesked">
+                <h3>Brugernavn må kun indeholde:</h3>
+                <p id="bogstaver" class="invalid">Små bogstaver</p>
+            </div>
+    
+            <!--Besked, der popper op, når man trykker på kode-feltet-->
+            <div id="besked" class="popbesked">
+                <h3>Adgangskoden skal indeholde følgende:</h3>
+                <p id="tal" class="invalid">Minimum ét tal</p>
+                <p id="karakterer" class="invalid">Minimum otte karakterer</p>
+            </div>
+        </section>
 
         <footer class="main-footer">
             <div>
