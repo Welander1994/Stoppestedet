@@ -435,11 +435,19 @@ h1 {
 }
 
 .glemtkode {
+    font-family: var(--h1);
     color: var(--red-1);
     text-decoration: underline;
     cursor: pointer;
 }
 
+.brugernavn {
+    font-family: var(--h1);
+}
+
+.Adgangskode {
+    font-family: var(--h1);
+}
 .popbesked {
     display: none;
 }
